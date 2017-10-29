@@ -1,0 +1,1254 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
+  -h+ms83fxx02_motorctrl.sym -z -Q16F685 -ol.obj -Mms83fxx02_motorctrl.map \
+  -E1 -ACONST=00h-0FFhx16 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
+  -AENTRY=00h-0FFhx16 -ASTRING=00h-0FFhx16 -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh -ACOMMON=070h-07Fh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-011Fh -ASFR3=0180h-01EFh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  startup.obj ms83fxx02_motorctrl.obj 
+
+Object code version is 3.10
+
+Machine type is 16F685
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                             11       11        2        8       0
+                reset_vec                             0        0        2        0       0
+ms83fxx02_motorctrl.obj
+                intentry                              4        4        D        8       0
+                text1705                            40D      40D      215        8       0
+                text1704                            71E      71E       18        8       0
+                text1698                            79B      79B        2        8       0
+                text1697                            798      798        3        8       0
+                text1696                            794      794        4        8       0
+                text1693                            736      736       17        8       0
+                text1692                            778      778        C        8       0
+                text1688                            6D5      6D5       25        8       0
+                text1673                            76C      76C        C        8       0
+                text1671                            6FA      6FA       24        8       0
+                text1668                            6A1      6A1       34        8       0
+                text1664                            78C      78C        8        8       0
+                text1663                             13       13      3FA        8       0
+                text1662                            74D      74D       10        8       0
+                maintext                            622      622       7F        8       0
+                cstackBANK0                          44       44       14       20       1
+                cstackCOMMON                         70       70        B       70       1
+                clrtext                             784      784        8        8       0
+                dataBANK0                            58       58        2       20       1
+                bssBANK0                             20       20       24       20       1
+                dataCOMMON                           7B       7B        2       70       1
+                bssCOMMON                            7D       7D        1       70       1
+                cinit                               75D      75D        F        8       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                             11       11        2         0
+                intentry                              4        4        D         0
+                reset_vec                             0        0        2         0
+                text1705                            40D      40D      215         0
+                text1704                            71E      71E       18         0
+                text1698                            79B      79B        2         0
+                text1697                            798      798        3         0
+                text1696                            794      794        4         0
+                text1693                            736      736       17         0
+                text1692                            778      778        C         0
+                text1688                            6D5      6D5       25         0
+                text1673                            76C      76C        C         0
+                text1671                            6FA      6FA       24         0
+                text1668                            6A1      6A1       34         0
+                text1664                            78C      78C        8         0
+                text1663                             13       13      3FA         0
+                text1662                            74D      74D       10         0
+                maintext                            622      622       7F         0
+                clrtext                             784      784        8         0
+                cinit                               75D      75D        F         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   BANK0          
+                cstackBANK0                          44       44       14         1
+                dataBANK0                            58       58        2         1
+                bssBANK0                             20       20       24         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        B         1
+                dataCOMMON                           7B       7B        2         1
+                bssCOMMON                            7D       7D        1         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   BANK3          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  000799  00079D         8       0  CODE        2
+                bssBANK0                       000020  00003A  00005A        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            05A-06F            16           1
+        BANK1            0A0-0EF            50           1
+        BANK2            120-16F            50           1
+        CODE             002-003             2           2
+                         79D-FFF            63
+        CONFIG           2007-2007             1           2
+        CONST            002-003             2           2
+                         79D-FFF           100
+        EEDATA           2100-21FF           100           2
+        ENTRY            002-003             2           2
+                         79D-FFF           100
+        IDLOC            2000-2003             4           2
+        RAM              05A-06F            16           1
+                         0A0-0EF            50
+                         120-16F            50
+        SFR0             000-01F            20           1
+        SFR1             080-09F            20           1
+        SFR2             100-11F            20           1
+        SFR3             180-1EF            70           1
+        STRCODE          002-003             2           2
+                         79D-FFF           863
+        STRING           002-003             2           2
+                         79D-FFF           100
+
+                                  Symbol Table
+
+??_ADC_Enable                          cstackCOMMON 070
+??_ADC_Init                            cstackBANK0  044
+??_ADC_IntrHandler                     cstackCOMMON 075
+??_ADC_ReadData                        cstackCOMMON 072
+??_Battery_Detect                      cstackBANK0  053
+??_Battery_HandleData                  cstackBANK0  046
+??_Board_Init                          cstackBANK0  044
+??_ChargeCtrl_Init                     cstackBANK0  047
+??_ChargeCtrl_Output                   cstackBANK0  047
+??_ChargeDetect_GetStatus              cstackBANK0  047
+??_ChargeDetect_Init                   cstackBANK0  047
+??_ChargeDetect_IntrHandler            cstackCOMMON 073
+??_ChargeTimer_Cmd                     cstackBANK0  044
+??_ChargeTimer_GetCount                cstackBANK0  046
+??_ChargeTimer_INTConfig               cstackBANK0  044
+??_ChargeTimer_IntrHandler             cstackCOMMON 070
+??_ChargeTimer_ResetCount              cstackBANK0  044
+??_Charge_Init                         cstackBANK0  049
+??_DebounceTimer_IntrHandler           cstackCOMMON 073
+??_Driver_Init                         cstackBANK0  049
+??_EEPROM_GetFlag                      cstackBANK0  046
+??_EEPROM_Init                         cstackBANK0  046
+??_EEPROM_Read                         cstackBANK0  044
+??_EEPROM_RestoreDeviceModeData        cstackBANK0  046
+??_EEPROM_RestoreMotorData             cstackBANK0  046
+??_EEPROM_SetFlag                      cstackBANK0  046
+??_EEPROM_StoreModeData                cstackBANK0  046
+??_EEPROM_StoreMotorData               cstackBANK0  046
+??_EEPROM_Write                        cstackBANK0  045
+??_GPIO_INTConfig                      cstackBANK0  046
+??_GPIO_Init                           cstackBANK0  045
+??_GPIO_ReadInputDataBit               cstackBANK0  045
+??_GPIO_WriteBit                       cstackBANK0  046
+??_GetDeviceMode                       cstackBANK0  044
+??_ISR                                 cstackCOMMON 077
+??_KEY_DeInit                          cstackBANK0  046
+??_KEY_GetPressStatus                  cstackBANK0  044
+??_KEY_GetReleaseStatus                cstackBANK0  044
+??_KEY_Init                            cstackBANK0  047
+??_KEY_IntrHandler                     cstackCOMMON 070
+??_LEDTimer_Cmd                        cstackBANK0  045
+??_LEDTimer_DispRunLimitCmd            cstackBANK0  044
+??_LEDTimer_DispUnderVoltCmd           cstackBANK0  044
+??_LEDTimer_INTConfig                  cstackBANK0  044
+??_LEDTimer_IntrHandler                cstackCOMMON 077
+??_LED_DisplayMotorStatus              cstackBANK0  048
+??_LED_DisplayRunLimit                 cstackCOMMON 076
+??_LED_Init                            cstackBANK0  047
+??_LED_UnderVoltageOutput              cstackBANK0  047
+??_LED_VoltageChargeOutput             cstackBANK0  047
+??_MotorOperTimer_IntrHandler          cstackCOMMON 076
+??_MotorOperationTimer_Init            cstackBANK0  044
+??_MotorOperationTimer_Stop            cstackBANK0  044
+??_Motor_CheckRunLimit                 cstackBANK0  044
+??_Motor_GetStatus                     cstackBANK0  044
+??_Motor_HandleStatusChangeEvt         cstackBANK0  04A
+??_Motor_Init                          cstackBANK0  044
+??_Motor_SetStatus                     cstackBANK0  044
+??_Motor_Start                         cstackBANK0  049
+??_Motor_Stop                          cstackBANK0  047
+??_SetDeviceMode                       cstackBANK0  044
+??_SwitchModeTimer_Cmd                 cstackBANK0  044
+??_SwitchModeTimer_GetINTStatus        cstackBANK0  044
+??_SwitchModeTimer_INTConfig           cstackBANK0  044
+??_SwitchModeTimer_IntrHandler         cstackCOMMON 070
+??_TIM1_Init                           cstackCOMMON 070
+??___lbmod                             cstackCOMMON 071
+??_charge_control                      cstackBANK0  056
+??_main                                cstackBANK0  058
+??i1_GPIO_ReadInputDataBit             cstackCOMMON 071
+??i1_GPIO_WriteBit                     cstackCOMMON 075
+??i1_GetDeviceMode                     cstackCOMMON 070
+??i1_LED_UnderVoltageOutput            cstackCOMMON 076
+??i1_MotorOperationTimer_Init          cstackCOMMON 070
+??i1_MotorOperationTimer_Stop          cstackCOMMON 070
+??i1_Motor_CheckRunLimit               cstackCOMMON 070
+??i1_Motor_Init                        cstackCOMMON 070
+??i1_Motor_SetStatus                   cstackCOMMON 070
+??i1_Motor_Stop                        cstackCOMMON 076
+?_ADC_Enable                           cstackCOMMON 070
+?_ADC_Init                             cstackCOMMON 070
+?_ADC_IntrHandler                      cstackCOMMON 070
+?_ADC_ReadData                         cstackCOMMON 070
+?_Battery_Detect                       cstackCOMMON 070
+?_Battery_HandleData                   cstackBANK0  044
+?_Board_Init                           cstackCOMMON 070
+?_ChargeCtrl_Init                      cstackCOMMON 070
+?_ChargeCtrl_Output                    cstackCOMMON 070
+?_ChargeDetect_GetStatus               cstackCOMMON 070
+?_ChargeDetect_Init                    cstackCOMMON 070
+?_ChargeDetect_IntrHandler             cstackCOMMON 070
+?_ChargeTimer_Cmd                      cstackCOMMON 070
+?_ChargeTimer_GetCount                 cstackBANK0  044
+?_ChargeTimer_INTConfig                cstackCOMMON 070
+?_ChargeTimer_IntrHandler              cstackCOMMON 070
+?_ChargeTimer_ResetCount               cstackCOMMON 070
+?_Charge_Init                          cstackCOMMON 070
+?_DebounceTimer_IntrHandler            cstackCOMMON 070
+?_Driver_Init                          cstackCOMMON 070
+?_EEPROM_GetFlag                       cstackCOMMON 070
+?_EEPROM_Init                          cstackCOMMON 070
+?_EEPROM_Read                          cstackCOMMON 070
+?_EEPROM_RestoreDeviceModeData         cstackCOMMON 070
+?_EEPROM_RestoreMotorData              cstackCOMMON 070
+?_EEPROM_SetFlag                       cstackCOMMON 070
+?_EEPROM_StoreModeData                 cstackCOMMON 070
+?_EEPROM_StoreMotorData                cstackCOMMON 070
+?_EEPROM_Write                         cstackBANK0  044
+?_GPIO_INTConfig                       cstackBANK0  044
+?_GPIO_Init                            cstackBANK0  044
+?_GPIO_ReadInputDataBit                cstackBANK0  044
+?_GPIO_WriteBit                        cstackBANK0  044
+?_GetDeviceMode                        cstackCOMMON 070
+?_ISR                                  cstackCOMMON 070
+?_KEY_DeInit                           cstackCOMMON 070
+?_KEY_GetPressStatus                   cstackCOMMON 070
+?_KEY_GetReleaseStatus                 cstackCOMMON 070
+?_KEY_Init                             cstackCOMMON 070
+?_KEY_IntrHandler                      cstackCOMMON 070
+?_LEDTimer_Cmd                         cstackBANK0  044
+?_LEDTimer_DispRunLimitCmd             cstackCOMMON 070
+?_LEDTimer_DispUnderVoltCmd            cstackCOMMON 070
+?_LEDTimer_INTConfig                   cstackCOMMON 070
+?_LEDTimer_IntrHandler                 cstackCOMMON 070
+?_LED_DisplayMotorStatus               cstackBANK0  047
+?_LED_DisplayRunLimit                  cstackCOMMON 070
+?_LED_Init                             cstackCOMMON 070
+?_LED_UnderVoltageOutput               cstackCOMMON 070
+?_LED_VoltageChargeOutput              cstackCOMMON 070
+?_MotorOperTimer_IntrHandler           cstackCOMMON 070
+?_MotorOperationTimer_Init             cstackCOMMON 070
+?_MotorOperationTimer_Stop             cstackCOMMON 070
+?_Motor_CheckRunLimit                  cstackCOMMON 070
+?_Motor_GetStatus                      cstackCOMMON 070
+?_Motor_HandleStatusChangeEvt          cstackCOMMON 070
+?_Motor_Init                           cstackCOMMON 070
+?_Motor_SetStatus                      cstackCOMMON 070
+?_Motor_Start                          cstackCOMMON 070
+?_Motor_Stop                           cstackCOMMON 070
+?_SetDeviceMode                        cstackCOMMON 070
+?_SwitchModeTimer_Cmd                  cstackCOMMON 070
+?_SwitchModeTimer_GetINTStatus         cstackCOMMON 070
+?_SwitchModeTimer_INTConfig            cstackCOMMON 070
+?_SwitchModeTimer_IntrHandler          cstackCOMMON 070
+?_TIM1_Init                            cstackCOMMON 070
+?___lbmod                              cstackCOMMON 070
+?_charge_control                       cstackCOMMON 070
+?_main                                 cstackCOMMON 070
+?i1_GPIO_ReadInputDataBit              cstackCOMMON 070
+?i1_GPIO_WriteBit                      cstackCOMMON 073
+?i1_GetDeviceMode                      cstackCOMMON 070
+?i1_LED_UnderVoltageOutput             cstackCOMMON 070
+?i1_MotorOperationTimer_Init           cstackCOMMON 070
+?i1_MotorOperationTimer_Stop           cstackCOMMON 070
+?i1_Motor_CheckRunLimit                cstackCOMMON 070
+?i1_Motor_Init                         cstackCOMMON 070
+?i1_Motor_SetStatus                    cstackCOMMON 070
+?i1_Motor_Stop                         cstackCOMMON 070
+ADC_Enable@channel                     cstackCOMMON 071
+ADC_Init@channel                       cstackBANK0  045
+ADC_ReadData@battery_value             cstackCOMMON 073
+Battery_Detect@adc_data                cstackBANK0  054
+Battery_Detect@mode                    cstackBANK0  053
+Battery_HandleData@average_data        cstackBANK0  04E
+Battery_HandleData@i                   cstackBANK0  052
+Battery_HandleData@temp1               cstackBANK0  050
+Battery_HandleData@temp2               cstackBANK0  04C
+ChargeCtrl_Init@GPIO_InitStruct        cstackBANK0  047
+ChargeCtrl_Output@BitVal               cstackBANK0  047
+ChargeDetect_GetStatus@i               cstackBANK0  047
+ChargeDetect_Init@GPIO_InitStruct      cstackBANK0  047
+ChargeTimer_Cmd@NewState               cstackBANK0  044
+ChargeTimer_INTConfig@NewState         cstackBANK0  044
+EEPROM_Read@addr                       cstackBANK0  044
+EEPROM_Read@data                       cstackBANK0  045
+EEPROM_Write@addr                      cstackBANK0  045
+EEPROM_Write@data                      cstackBANK0  044
+GPIO_INTConfig@GPIO_Pin                cstackBANK0  044
+GPIO_INTConfig@GPIOx                   cstackBANK0  046
+GPIO_INTConfig@NewState                cstackBANK0  045
+GPIO_Init@GPIO_InitStruct              cstackBANK0  044
+GPIO_Init@GPIOx                        cstackBANK0  045
+GPIO_ReadInputDataBit@GPIO_Pin         cstackBANK0  044
+GPIO_ReadInputDataBit@GPIOx            cstackBANK0  046
+GPIO_ReadInputDataBit@bitstatus        cstackBANK0  045
+GPIO_WriteBit@BitVal                   cstackBANK0  045
+GPIO_WriteBit@GPIO_Pin                 cstackBANK0  044
+GPIO_WriteBit@GPIOx                    cstackBANK0  046
+KEY_DeInit@GPIO_InitStruct             cstackBANK0  046
+KEY_Init@GPIO_InitStruct               cstackBANK0  047
+LEDTimer_Cmd@NewState                  cstackBANK0  044
+LEDTimer_Cmd@period_type               cstackBANK0  045
+LEDTimer_DispRunLimitCmd@NewState      cstackBANK0  044
+LEDTimer_DispUnderVoltCmd@NewState     cstackBANK0  044
+LEDTimer_INTConfig@NewState            cstackBANK0  044
+LED_DisplayMotorStatus@GPIO_Pin        cstackBANK0  047
+LED_DisplayMotorStatus@GPIOx           cstackBANK0  048
+LED_Init@GPIO_InitStruct               cstackBANK0  047
+LED_UnderVoltageOutput@BitVal          cstackBANK0  047
+LED_VoltageChargeOutput@BitVal         cstackBANK0  047
+MotorOperationTimer_Init@time          cstackBANK0  044
+Motor_HandleStatusChangeEvt@status     cstackBANK0  04A
+Motor_Init@status                      cstackBANK0  044
+Motor_SetStatus@status                 cstackBANK0  044
+Motor_Start@status                     cstackBANK0  049
+SetDeviceMode@mode                     cstackBANK0  044
+SwitchModeTimer_Cmd@NewState           cstackBANK0  044
+SwitchModeTimer_INTConfig@NewState     cstackBANK0  044
+_ADCON0                                (abs)        01F
+_ADCON1                                (abs)        09F
+_ADC_Enable                            text1705     614
+_ADC_Init                              text1663     03B
+_ADC_IntrHandler                       text1705     5D9
+_ADC_ReadData                          text1705     5F6
+_ADIE                                  (abs)        469
+_ADIF                                  (abs)        069
+_ADON                                  (abs)        0F8
+_ADRESH                                (abs)        01E
+_ADRESL                                (abs)        09E
+_ANSEL                                 (abs)        091
+_ANSEL5                                (abs)        48D
+_Battery_Detect                        text1663     0AA
+_Battery_HandleData                    text1663     343
+_Board_Init                            text1704     71E
+_CCP1CON                               (abs)        015
+_CCPR1L                                (abs)        013
+_CMCON0                                (abs)        019
+_ChargeCtrl_Init                       text1662     74D
+_ChargeCtrl_Output                     text1664     78C
+_ChargeDetect_GetStatus                text1668     6A1
+_ChargeDetect_Init                     text1663     013
+_ChargeDetect_IntrHandler              text1705     5CB
+_ChargeTimer_Cmd                       text1693     736
+_ChargeTimer_GetCount                  text1663     0A4
+_ChargeTimer_INTConfig                 text1692     778
+_ChargeTimer_IntrHandler               text1705     58A
+_ChargeTimer_ResetCount                text1697     798
+_Charge_Init                           text1663     3EC
+_DebounceTimer_IntrHandler             text1705     5A7
+_Driver_Init                           text1663     028
+_EEADR                                 (abs)        09B
+_EECON1                                (abs)        09C
+_EEDAT                                 (abs)        09A
+_EEPROM_GetFlag                        text1671     6FA
+_EEPROM_Init                           text1673     76C
+_EEPROM_Read                           text1671     711
+_EEPROM_RestoreDeviceModeData          text1671     6FC
+_EEPROM_RestoreMotorData               text1671     700
+_EEPROM_SetFlag                        text1663     3DC
+_EEPROM_StoreModeData                  text1663     3E0
+_EEPROM_StoreMotorData                 text1663     3AE
+_EEPROM_Write                          text1663     3C5
+_GIE                                   (abs)        05F
+_GO_DONE                               (abs)        0F9
+_GPIO_INTConfig                        text1688     6D5
+_GPIO_Init                             text1663     141
+_GPIO_ReadInputDataBit                 text1668     6C1
+_GPIO_WriteBit                         text1663     229
+_GetDeviceMode                         text1663     300
+_INTCON                                (abs)        00B
+_INTE                                  (abs)        05C
+_INTEDG                                (abs)        40E
+_INTF                                  (abs)        059
+_IOCA                                  (abs)        096
+_ISR                                   text1705     40D
+_KEY_DeInit                            text1663     39F
+_KEY_GetPressStatus                    text1663     304
+_KEY_GetReleaseStatus                  text1663     216
+_KEY_Init                              text1663     06F
+_KEY_IntrHandler                       text1705     599
+_LEDTimer_Cmd                          text1663     051
+_LEDTimer_DispRunLimitCmd              text1663     2E1
+_LEDTimer_DispUnderVoltCmd             text1663     309
+_LEDTimer_INTConfig                    text1663     3EF
+_LEDTimer_IntrHandler                  text1705     4F5
+_LED_DisplayMotorStatus                text1663     27B
+_LED_DisplayRunLimit                   text1705     524
+_LED_Init                              text1663     101
+_LED_UnderVoltageOutput                text1663     2F8
+_LED_VoltageChargeOutput               text1663     3E5
+_MSCKCON                               (abs)        01B
+_MotorOperTimer_IntrHandler            text1705     42E
+_MotorOperationTimer_Init              text1663     2B7
+_MotorOperationTimer_Stop              text1663     21D
+_Motor_CheckRunLimit                   text1663     2EA
+_Motor_GetStatus                       text1698     79B
+_Motor_HandleStatusChangeEvt           text1663     169
+_Motor_Init                            text1663     312
+_Motor_SetStatus                       text1663     212
+_Motor_Start                           text1663     254
+_Motor_Stop                            text1663     23F
+_OSCCON                                (abs)        08F
+_PAIE                                  (abs)        05B
+_PAIF                                  (abs)        058
+_PC4                                   (abs)        03C
+_PCON                                  (abs)        08E
+_PEIE                                  (abs)        05E
+_PIE1                                  (abs)        08C
+_PIE2                                  (abs)        08D
+_PIR1                                  (abs)        00C
+_PIR2                                  (abs)        00D
+_PORTA                                 (abs)        005
+_PORTC                                 (abs)        007
+_PR2                                   (abs)        092
+_PR3L                                  (abs)        10E
+_PR4L                                  (abs)        114
+_PR5L                                  (abs)        11A
+_PWM3CR0                               (abs)        10F
+_PWM3CR1                               (abs)        110
+_PWM4CR0                               (abs)        115
+_PWM4CR1                               (abs)        116
+_PWM5CR0                               (abs)        11B
+_PWM5CR1                               (abs)        11C
+_RD                                    (abs)        4E0
+_SetDeviceMode                         text1696     794
+_SwitchModeTimer_Cmd                   text1663     294
+_SwitchModeTimer_GetINTStatus          text1663     2F3
+_SwitchModeTimer_INTConfig             text1663     2AB
+_SwitchModeTimer_IntrHandler           text1705     57E
+_T1CON                                 (abs)        010
+_T2CKSRC                               (abs)        0DD
+_T2CON                                 (abs)        012
+_T3CKDIV                               (abs)        111
+_T4CKDIV                               (abs)        117
+_T5CKDIV                               (abs)        11D
+_TIM1_Init                             text1705     607
+_TMR1H                                 (abs)        00F
+_TMR1IE                                (abs)        460
+_TMR1IF                                (abs)        060
+_TMR1L                                 (abs)        00E
+_TMR1ON                                (abs)        080
+_TMR2                                  (abs)        011
+_TMR2IF                                (abs)        061
+_TMR2ON                                (abs)        092
+_TMR3H                                 (abs)        10D
+_TMR3IE                                (abs)        881
+_TMR3IF                                (abs)        880
+_TMR3L                                 (abs)        10C
+_TMR3ON                                (abs)        882
+_TMR4H                                 (abs)        113
+_TMR4IE                                (abs)        8B1
+_TMR4IF                                (abs)        8B0
+_TMR4L                                 (abs)        112
+_TMR4ON                                (abs)        8B2
+_TMR5H                                 (abs)        119
+_TMR5IE                                (abs)        8E1
+_TMR5IF                                (abs)        8E0
+_TMR5L                                 (abs)        118
+_TMR5ON                                (abs)        8E2
+_TRISA                                 (abs)        085
+_TRISC                                 (abs)        087
+_TRISC4                                (abs)        43C
+_WDTCON                                (abs)        018
+_WPD                                   (abs)        089
+_WPUA                                  (abs)        095
+_WR                                    (abs)        4E8
+_WREN1                                 (abs)        4E2
+_WREN2                                 (abs)        4E4
+_WREN3                                 (abs)        4E5
+__Habs1                                abs1         000
+__Hbank0                               bank0        000
+__Hbank1                               bank1        000
+__Hbank2                               bank2        000
+__Hbank3                               bank3        000
+__HbssBANK0                            bssBANK0     000
+__HbssCOMMON                           bssCOMMON    000
+__Hcinit                               cinit        000
+__Hclrtext                             clrtext      000
+__Hcode                                code         000
+__Hcommon                              common       000
+__Hconfig                              config       000
+__HcstackBANK0                         cstackBANK0  000
+__HcstackCOMMON                        cstackCOMMON 000
+__HdataBANK0                           dataBANK0    000
+__HdataCOMMON                          dataCOMMON   000
+__Heeprom_data                         eeprom_data  000
+__Hend_init                            end_init     013
+__Hfunctab                             functab      000
+__HidataBANK0                          idataBANK0   000
+__HidataCOMMON                         idataCOMMON  000
+__Hidloc                               idloc        000
+__Hinit                                init         011
+__Hintentry                            intentry     011
+__Hmaintext                            maintext     000
+__Hpa_nodes                            pa_nodes     000
+__Hpowerup                             powerup      000
+__Hram                                 ram          000
+__Hreset_vec                           reset_vec    002
+__Hsfr0                                sfr0         000
+__Hsfr1                                sfr1         000
+__Hsfr2                                sfr2         000
+__Hsfr3                                sfr3         000
+__Hstrings                             strings      000
+__Htext                                text         000
+__Labs1                                abs1         000
+__Lbank0                               bank0        000
+__Lbank1                               bank1        000
+__Lbank2                               bank2        000
+__Lbank3                               bank3        000
+__LbssBANK0                            bssBANK0     000
+__LbssCOMMON                           bssCOMMON    000
+__Lcinit                               cinit        000
+__Lclrtext                             clrtext      000
+__Lcode                                code         000
+__Lcommon                              common       000
+__Lconfig                              config       000
+__LcstackBANK0                         cstackBANK0  000
+__LcstackCOMMON                        cstackCOMMON 000
+__LdataBANK0                           dataBANK0    000
+__LdataCOMMON                          dataCOMMON   000
+__Leeprom_data                         eeprom_data  000
+__Lend_init                            end_init     011
+__Lfunctab                             functab      000
+__LidataBANK0                          idataBANK0   000
+__LidataCOMMON                         idataCOMMON  000
+__Lidloc                               idloc        000
+__Linit                                init         011
+__Lintentry                            intentry     004
+__Lmaintext                            maintext     000
+__Lpa_nodes                            pa_nodes     000
+__Lpowerup                             powerup      000
+__Lram                                 ram          000
+__Lreset_vec                           reset_vec    000
+__Lsfr0                                sfr0         000
+__Lsfr1                                sfr1         000
+__Lsfr2                                sfr2         000
+__Lsfr3                                sfr3         000
+__Lstrings                             strings      000
+__Ltext                                text         000
+__S0                                   (abs)        79D
+__S1                                   (abs)        07E
+__S2                                   (abs)        000
+___lbmod                               text1705     4A3
+___lbmod@counter                       cstackCOMMON 073
+___lbmod@dividend                      cstackCOMMON 072
+___lbmod@divisor                       cstackCOMMON 070
+___lbmod@rem                           cstackCOMMON 074
+__end_of_ADC_Enable                    text1705     622
+__end_of_ADC_Init                      text1663     051
+__end_of_ADC_IntrHandler               text1705     5F6
+__end_of_ADC_ReadData                  text1705     607
+__end_of_Battery_Detect                text1663     101
+__end_of_Battery_HandleData            text1663     39F
+__end_of_Board_Init                    text1704     736
+__end_of_ChargeCtrl_Init               text1662     75D
+__end_of_ChargeCtrl_Output             text1664     794
+__end_of_ChargeDetect_GetStatus        text1668     6C1
+__end_of_ChargeDetect_Init             text1663     028
+__end_of_ChargeDetect_IntrHandler      text1705     5D9
+__end_of_ChargeTimer_Cmd               text1693     74D
+__end_of_ChargeTimer_GetCount          text1663     0AA
+__end_of_ChargeTimer_INTConfig         text1692     784
+__end_of_ChargeTimer_IntrHandler       text1705     595
+__end_of_ChargeTimer_ResetCount        text1697     79B
+__end_of_Charge_Init                   text1663     3EF
+__end_of_DebounceTimer_IntrHandler     text1705     5CB
+__end_of_Driver_Init                   text1663     03B
+__end_of_EEPROM_GetFlag                text1671     6FC
+__end_of_EEPROM_Init                   text1673     778
+__end_of_EEPROM_Read                   text1671     71E
+__end_of_EEPROM_RestoreDeviceModeData  text1671     700
+__end_of_EEPROM_RestoreMotorData       text1671     711
+__end_of_EEPROM_SetFlag                text1663     3E0
+__end_of_EEPROM_StoreModeData          text1663     3E5
+__end_of_EEPROM_StoreMotorData         text1663     3C5
+__end_of_EEPROM_Write                  text1663     3DC
+__end_of_GPIO_INTConfig                text1688     6FA
+__end_of_GPIO_Init                     text1663     169
+__end_of_GPIO_ReadInputDataBit         text1668     6D5
+__end_of_GPIO_WriteBit                 text1663     23F
+__end_of_GetDeviceMode                 text1663     304
+__end_of_ISR                           text1705     42E
+__end_of_KEY_DeInit                    text1663     3AE
+__end_of_KEY_GetPressStatus            text1663     309
+__end_of_KEY_GetReleaseStatus          text1663     21D
+__end_of_KEY_Init                      text1663     07F
+__end_of_KEY_IntrHandler               text1705     5A7
+__end_of_LEDTimer_Cmd                  text1663     06F
+__end_of_LEDTimer_DispRunLimitCmd      text1663     2EA
+__end_of_LEDTimer_DispUnderVoltCmd     text1663     312
+__end_of_LEDTimer_INTConfig            text1663     3FB
+__end_of_LEDTimer_IntrHandler          text1705     50E
+__end_of_LED_DisplayMotorStatus        text1663     294
+__end_of_LED_DisplayRunLimit           text1705     546
+__end_of_LED_Init                      text1663     141
+__end_of_LED_UnderVoltageOutput        text1663     300
+__end_of_LED_VoltageChargeOutput       text1663     3EC
+__end_of_MotorOperTimer_IntrHandler    text1705     467
+__end_of_MotorOperationTimer_Init      text1663     2E1
+__end_of_MotorOperationTimer_Stop      text1663     229
+__end_of_Motor_CheckRunLimit           text1663     2F3
+__end_of_Motor_GetStatus               text1698     79D
+__end_of_Motor_HandleStatusChangeEvt   text1663     212
+__end_of_Motor_Init                    text1663     343
+__end_of_Motor_SetStatus               text1663     216
+__end_of_Motor_Start                   text1663     27B
+__end_of_Motor_Stop                    text1663     254
+__end_of_SetDeviceMode                 text1696     798
+__end_of_SwitchModeTimer_Cmd           text1663     2AB
+__end_of_SwitchModeTimer_GetINTStatus  text1663     2F8
+__end_of_SwitchModeTimer_INTConfig     text1663     2B7
+__end_of_SwitchModeTimer_IntrHandler   text1705     58A
+__end_of_TIM1_Init                     text1705     614
+__end_of___lbmod                       text1705     4BF
+__end_of_charge_control                text1663     0A4
+__end_of_main                          maintext     6A1
+__end_ofi1_GPIO_ReadInputDataBit       text1705     55C
+__end_ofi1_GPIO_WriteBit               text1705     576
+__end_ofi1_GetDeviceMode               text1705     599
+__end_ofi1_LED_UnderVoltageOutput      text1705     57E
+__end_ofi1_MotorOperationTimer_Init    text1705     48E
+__end_ofi1_MotorOperationTimer_Stop    text1705     49A
+__end_ofi1_Motor_CheckRunLimit         text1705     4A3
+__end_ofi1_Motor_Init                  text1705     4F2
+__end_ofi1_Motor_SetStatus             text1705     4F5
+__end_ofi1_Motor_Stop                  text1705     524
+__pbssBANK0                            bssBANK0     020
+__pbssCOMMON                           bssCOMMON    07D
+__pcstackBANK0                         cstackBANK0  044
+__pcstackCOMMON                        cstackCOMMON 070
+__pdataBANK0                           dataBANK0    058
+__pdataCOMMON                          dataCOMMON   07B
+__pidataBANK0                          idataBANK0   000
+__pidataCOMMON                         idataCOMMON  000
+__pintentry                            intentry     004
+__pmaintext                            maintext     622
+__ptext1651                            text1663     169
+__ptext1652                            text1663     07F
+__ptext1653                            text1663     028
+__ptext1654                            text1663     254
+__ptext1655                            text1663     0AA
+__ptext1656                            text1663     3EC
+__ptext1657                            text1663     3E0
+__ptext1658                            text1663     3DC
+__ptext1659                            text1663     3AE
+__ptext1660                            text1663     2F8
+__ptext1661                            text1663     27B
+__ptext1662                            text1662     74D
+__ptext1663                            text1663     013
+__ptext1664                            text1664     78C
+__ptext1665                            text1663     21D
+__ptext1666                            text1663     23F
+__ptext1667                            text1663     39F
+__ptext1668                            text1668     6A1
+__ptext1669                            text1671     700
+__ptext1670                            text1671     6FC
+__ptext1671                            text1671     6FA
+__ptext1672                            text1663     3E5
+__ptext1673                            text1673     76C
+__ptext1674                            text1663     06F
+__ptext1675                            text1663     101
+__ptext1676                            text1663     343
+__ptext1677                            text1663     2F3
+__ptext1678                            text1663     2B7
+__ptext1679                            text1663     2EA
+__ptext1680                            text1663     2AB
+__ptext1681                            text1663     294
+__ptext1682                            text1663     312
+__ptext1683                            text1663     309
+__ptext1684                            text1663     304
+__ptext1685                            text1663     216
+__ptext1686                            text1671     711
+__ptext1687                            text1663     3C5
+__ptext1688                            text1688     6D5
+__ptext1689                            text1668     6C1
+__ptext1690                            text1663     141
+__ptext1691                            text1663     300
+__ptext1692                            text1692     778
+__ptext1693                            text1693     736
+__ptext1694                            text1663     2E1
+__ptext1695                            text1663     212
+__ptext1696                            text1696     794
+__ptext1697                            text1697     798
+__ptext1698                            text1698     79B
+__ptext1699                            text1663     229
+__ptext1700                            text1663     0A4
+__ptext1701                            text1663     3EF
+__ptext1702                            text1663     051
+__ptext1703                            text1663     03B
+__ptext1704                            text1704     71E
+__ptext1705                            text1705     40D
+__ptext1706                            text1705     4F5
+__ptext1707                            text1705     42E
+__ptext1708                            text1705     48E
+__ptext1709                            text1705     50E
+__ptext1710                            text1705     576
+__ptext1711                            text1705     524
+__ptext1712                            text1705     5D9
+__ptext1713                            text1705     5CB
+__ptext1714                            text1705     5A7
+__ptext1715                            text1705     599
+__ptext1716                            text1705     595
+__ptext1717                            text1705     467
+__ptext1718                            text1705     49A
+__ptext1719                            text1705     4F2
+__ptext1720                            text1705     4BF
+__ptext1721                            text1705     546
+__ptext1722                            text1705     55C
+__ptext1723                            text1705     4A3
+__ptext1724                            text1705     5F6
+__ptext1725                            text1705     614
+__ptext1726                            text1705     607
+__ptext1727                            text1705     58A
+__ptext1728                            text1705     57E
+__ptext1729                            text1729     000
+__size_of_ADC_Enable                   (abs)        000
+__size_of_ADC_Init                     (abs)        000
+__size_of_ADC_IntrHandler              (abs)        000
+__size_of_ADC_ReadData                 (abs)        000
+__size_of_Battery_Detect               (abs)        000
+__size_of_Battery_HandleData           (abs)        000
+__size_of_Board_Init                   (abs)        000
+__size_of_ChargeCtrl_Init              (abs)        000
+__size_of_ChargeCtrl_Output            (abs)        000
+__size_of_ChargeDetect_GetStatus       (abs)        000
+__size_of_ChargeDetect_Init            (abs)        000
+__size_of_ChargeDetect_IntrHandler     (abs)        000
+__size_of_ChargeTimer_Cmd              (abs)        000
+__size_of_ChargeTimer_GetCount         (abs)        000
+__size_of_ChargeTimer_INTConfig        (abs)        000
+__size_of_ChargeTimer_IntrHandler      (abs)        000
+__size_of_ChargeTimer_ResetCount       (abs)        000
+__size_of_Charge_Init                  (abs)        000
+__size_of_DebounceTimer_IntrHandler    (abs)        000
+__size_of_Driver_Init                  (abs)        000
+__size_of_EEPROM_GetFlag               (abs)        000
+__size_of_EEPROM_Init                  (abs)        000
+__size_of_EEPROM_Read                  (abs)        000
+__size_of_EEPROM_RestoreDeviceModeData (abs)        000
+__size_of_EEPROM_RestoreMotorData      (abs)        000
+__size_of_EEPROM_SetFlag               (abs)        000
+__size_of_EEPROM_StoreModeData         (abs)        000
+__size_of_EEPROM_StoreMotorData        (abs)        000
+__size_of_EEPROM_Write                 (abs)        000
+__size_of_GPIO_INTConfig               (abs)        000
+__size_of_GPIO_Init                    (abs)        000
+__size_of_GPIO_ReadInputDataBit        (abs)        000
+__size_of_GPIO_WriteBit                (abs)        000
+__size_of_GetDeviceMode                (abs)        000
+__size_of_ISR                          (abs)        000
+__size_of_KEY_DeInit                   (abs)        000
+__size_of_KEY_GetPressStatus           (abs)        000
+__size_of_KEY_GetReleaseStatus         (abs)        000
+__size_of_KEY_Init                     (abs)        000
+__size_of_KEY_IntrHandler              (abs)        000
+__size_of_LEDTimer_Cmd                 (abs)        000
+__size_of_LEDTimer_DispRunLimitCmd     (abs)        000
+__size_of_LEDTimer_DispUnderVoltCmd    (abs)        000
+__size_of_LEDTimer_INTConfig           (abs)        000
+__size_of_LEDTimer_IntrHandler         (abs)        000
+__size_of_LED_DisplayMotorStatus       (abs)        000
+__size_of_LED_DisplayRunLimit          (abs)        000
+__size_of_LED_Init                     (abs)        000
+__size_of_LED_UnderVoltageOutput       (abs)        000
+__size_of_LED_VoltageChargeOutput      (abs)        000
+__size_of_MotorOperTimer_IntrHandler   (abs)        000
+__size_of_MotorOperationTimer_Init     (abs)        000
+__size_of_MotorOperationTimer_Stop     (abs)        000
+__size_of_Motor_CheckRunLimit          (abs)        000
+__size_of_Motor_GetStatus              (abs)        000
+__size_of_Motor_HandleStatusChangeEvt  (abs)        000
+__size_of_Motor_Init                   (abs)        000
+__size_of_Motor_SetStatus              (abs)        000
+__size_of_Motor_Start                  (abs)        000
+__size_of_Motor_Stop                   (abs)        000
+__size_of_SetDeviceMode                (abs)        000
+__size_of_SwitchModeTimer_Cmd          (abs)        000
+__size_of_SwitchModeTimer_GetINTStatus (abs)        000
+__size_of_SwitchModeTimer_INTConfig    (abs)        000
+__size_of_SwitchModeTimer_IntrHandler  (abs)        000
+__size_of_TIM1_Init                    (abs)        000
+__size_of___lbmod                      (abs)        000
+__size_of_charge_control               (abs)        000
+__size_of_main                         (abs)        000
+__size_ofi1_GPIO_ReadInputDataBit      (abs)        000
+__size_ofi1_GPIO_WriteBit              (abs)        000
+__size_ofi1_GetDeviceMode              (abs)        000
+__size_ofi1_LED_UnderVoltageOutput     (abs)        000
+__size_ofi1_MotorOperationTimer_Init   (abs)        000
+__size_ofi1_MotorOperationTimer_Stop   (abs)        000
+__size_ofi1_Motor_CheckRunLimit        (abs)        000
+__size_ofi1_Motor_Init                 (abs)        000
+__size_ofi1_Motor_SetStatus            (abs)        000
+__size_ofi1_Motor_Stop                 (abs)        000
+_battery_handle_flag                   bssBANK0     038
+_battery_sample_count                  bssBANK0     039
+_battery_value                         bssBANK0     020
+_charge_control                        text1663     07F
+_charge_detect_count                   bssBANK0     03A
+_charge_time_out                       bssBANK0     034
+_current_period_type                   dataBANK0    058
+_detect_under_voltage                  bssBANK0     03B
+_device_mode                           bssBANK0     03C
+_exit                                  init         011
+_key_press                             bssBANK0     03D
+_key_press_flag                        bssBANK0     03E
+_key_press_time_count                  bssBANK0     03F
+_key_release                           bssBANK0     040
+_key_status                            dataCOMMON   07B
+_main                                  maintext     622
+_motor_intr_count                      bssCOMMON    07D
+_motor_oper_record                     bssBANK0     036
+_motor_status                          dataCOMMON   07C
+_motor_timing_running_flag             dataBANK0    059
+_run_limit_display_en                  bssBANK0     041
+_switch_mode_time_out                  bssBANK0     042
+_under_volt_display_En                 bssBANK0     043
+btemp                                  (abs)        07E
+charge_control@charge_count            cstackBANK0  056
+clear_ram                              clrtext      784
+end_of_initialization                  cinit        769
+i1GPIO_ReadInputDataBit@GPIO_Pin       cstackCOMMON 070
+i1GPIO_ReadInputDataBit@GPIOx          cstackCOMMON 072
+i1GPIO_ReadInputDataBit@bitstatus      cstackCOMMON 071
+i1GPIO_WriteBit@BitVal                 cstackCOMMON 074
+i1GPIO_WriteBit@GPIO_Pin               cstackCOMMON 073
+i1GPIO_WriteBit@GPIOx                  cstackCOMMON 075
+i1LED_UnderVoltageOutput@BitVal        cstackCOMMON 076
+i1MotorOperationTimer_Init@time        cstackCOMMON 070
+i1Motor_Init@status                    cstackCOMMON 070
+i1Motor_SetStatus@status               cstackCOMMON 070
+i1_GPIO_ReadInputDataBit               text1705     546
+i1_GPIO_WriteBit                       text1705     55C
+i1_GetDeviceMode                       text1705     595
+i1_LED_UnderVoltageOutput              text1705     576
+i1_MotorOperationTimer_Init            text1705     467
+i1_MotorOperationTimer_Stop            text1705     48E
+i1_Motor_CheckRunLimit                 text1705     49A
+i1_Motor_Init                          text1705     4BF
+i1_Motor_SetStatus                     text1705     4F2
+i1_Motor_Stop                          text1705     50E
+i1l10018                                               
+i1l10033                                               
+i1l10036                                               
+i1l1172                                                
+i1l12949                                               
+i1l14528                                               
+i1l14530                                               
+i1l14532                                               
+i1l14540                                               
+i1l14542                                               
+i1l14544                                               
+i1l14546                                               
+i1l14552                                               
+i1l14554                                               
+i1l14556                                               
+i1l14558                                               
+i1l14564                                               
+i1l14572                                               
+i1l14578                                               
+i1l14584                                               
+i1l14586                                               
+i1l14594                                               
+i1l14596                                               
+i1l14600                                               
+i1l14606                                               
+i1l14608                                               
+i1l14610                                               
+i1l14612                                               
+i1l14618                                               
+i1l14622                                               
+i1l14628                                               
+i1l14632                                               
+i1l14634                                               
+i1l14636                                               
+i1l14640                                               
+i1l14642                                               
+i1l14648                                               
+i1l14650                                               
+i1l14654                                               
+i1l14744                                               
+i1l14746                                               
+i1l14748                                               
+i1l14750                                               
+i1l14752                                               
+i1l14754                                               
+i1l14756                                               
+i1l14782                                               
+i1l14790                                               
+i1l14792                                               
+i1l14794                                               
+i1l14796                                               
+i1l14798                                               
+i1l14906                                               
+i1l14908                                               
+i1l14910                                               
+i1l14942                                               
+i1l14944                                               
+i1l14948                                               
+i1l14950                                               
+i1l14956                                               
+i1l14960                                               
+i1l14964                                               
+i1l14970                                               
+i1l14974                                               
+i1l14976                                               
+i1l14984                                               
+i1l14992                                               
+i1l14994                                               
+i1l14996                                               
+i1l14998                                               
+i1l15000                                               
+i1l15002                                               
+i1l15004                                               
+i1l15006                                               
+i1l15024                                               
+i1l15026                                               
+i1l15030                                               
+i1l15032                                               
+i1l15034                                               
+i1l15036                                               
+i1l15046                                               
+i1l15048                                               
+i1l15050                                               
+i1l15058                                               
+i1l15060                                               
+i1l15062                                               
+i1l15064                                               
+i1l15066                                               
+i1l15068                                               
+i1l15070                                               
+i1l15072                                               
+i1l15074                                               
+i1l15078                                               
+i1l15080                                               
+i1l4432                                                
+i1l5520                                                
+i1l6622                                                
+i1l6628                                                
+i1l8842                                                
+i1l8857                                                
+i1l8868                                                
+interrupt_function                     intentry     004
+intlevel0                              functab      000
+intlevel1                              functab      000
+intlevel2                              functab      000
+intlevel3                              functab      000
+intlevel4                              functab      000
+intlevel5                              functab      000
+l10018                                                 
+l10021                                                 
+l10030                                                 
+l10044                                                 
+l10047                                                 
+l10050                                                 
+l10053                                                 
+l10059                                                 
+l1137                                                  
+l1140                                                  
+l12234                                                 
+l12237                                                 
+l14412                                                 
+l14414                                                 
+l14416                                                 
+l14418                                                 
+l14420                                                 
+l14422                                                 
+l14424                                                 
+l14426                                                 
+l14428                                                 
+l14430                                                 
+l14432                                                 
+l14434                                                 
+l14436                                                 
+l14438                                                 
+l14440                                                 
+l14442                                                 
+l14446                                                 
+l14450                                                 
+l14452                                                 
+l14454                                                 
+l14456                                                 
+l14466                                                 
+l14468                                                 
+l14470                                                 
+l14474                                                 
+l14478                                                 
+l14484                                                 
+l14488                                                 
+l14492                                                 
+l14494                                                 
+l14496                                                 
+l14498                                                 
+l14500                                                 
+l14504                                                 
+l14506                                                 
+l14508                                                 
+l14510                                                 
+l14512                                                 
+l14514                                                 
+l14516                                                 
+l14518                                                 
+l14520                                                 
+l14522                                                 
+l14524                                                 
+l14658                                                 
+l14662                                                 
+l14668                                                 
+l14672                                                 
+l14674                                                 
+l14682                                                 
+l14690                                                 
+l14694                                                 
+l14696                                                 
+l14702                                                 
+l14706                                                 
+l14708                                                 
+l14710                                                 
+l14712                                                 
+l14714                                                 
+l14716                                                 
+l14718                                                 
+l14720                                                 
+l14722                                                 
+l14724                                                 
+l14726                                                 
+l14728                                                 
+l14730                                                 
+l14732                                                 
+l14734                                                 
+l14736                                                 
+l14738                                                 
+l14758                                                 
+l14760                                                 
+l14762                                                 
+l14770                                                 
+l14772                                                 
+l14774                                                 
+l14784                                                 
+l14786                                                 
+l14800                                                 
+l14802                                                 
+l14804                                                 
+l14806                                                 
+l14808                                                 
+l14810                                                 
+l14812                                                 
+l14830                                                 
+l14832                                                 
+l14836                                                 
+l14838                                                 
+l14840                                                 
+l14842                                                 
+l14844                                                 
+l14846                                                 
+l14848                                                 
+l14850                                                 
+l14852                                                 
+l14854                                                 
+l14856                                                 
+l14866                                                 
+l14868                                                 
+l14870                                                 
+l14878                                                 
+l14880                                                 
+l14882                                                 
+l14884                                                 
+l14886                                                 
+l14888                                                 
+l14890                                                 
+l14892                                                 
+l14894                                                 
+l14896                                                 
+l14914                                                 
+l14916                                                 
+l14918                                                 
+l14928                                                 
+l14932                                                 
+l14934                                                 
+l14938                                                 
+l15084                                                 
+l15086                                                 
+l15088                                                 
+l15090                                                 
+l15092                                                 
+l15094                                                 
+l15096                                                 
+l15098                                                 
+l15100                                                 
+l15102                                                 
+l15104                                                 
+l15106                                                 
+l15108                                                 
+l15110                                                 
+l15112                                                 
+l15114                                                 
+l15116                                                 
+l15118                                                 
+l15120                                                 
+l15124                                                 
+l15126                                                 
+l15130                                                 
+l15132                                                 
+l15134                                                 
+l15140                                                 
+l15144                                                 
+l15154                                                 
+l15156                                                 
+l15158                                                 
+l15160                                                 
+l15162                                                 
+l15164                                                 
+l15166                                                 
+l15168                                                 
+l15170                                                 
+l15172                                                 
+l15176                                                 
+l15180                                                 
+l15182                                                 
+l15184                                                 
+l15186                                                 
+l15188                                                 
+l15190                                                 
+l15192                                                 
+l15196                                                 
+l15198                                                 
+l15200                                                 
+l15202                                                 
+l15204                                                 
+l15206                                                 
+l15208                                                 
+l15210                                                 
+l15212                                                 
+l15216                                                 
+l15224                                                 
+l15226                                                 
+l15232                                                 
+l15234                                                 
+l15236                                                 
+l15242                                                 
+l15246                                                 
+l15250                                                 
+l15252                                                 
+l15256                                                 
+l15260                                                 
+l15274                                                 
+l15276                                                 
+l15278                                                 
+l15280                                                 
+l15282                                                 
+l15284                                                 
+l15286                                                 
+l15296                                                 
+l15304                                                 
+l15306                                                 
+l15308                                                 
+l15322                                                 
+l15324                                                 
+l15326                                                 
+l15336                                                 
+l15338                                                 
+l15340                                                 
+l15352                                                 
+l15356                                                 
+l15360                                                 
+l15366                                                 
+l15370                                                 
+l15372                                                 
+l15378                                                 
+l15384                                                 
+l15390                                                 
+l15392                                                 
+l15394                                                 
+l15396                                                 
+l15398                                                 
+l15400                                                 
+l15402                                                 
+l15404                                                 
+l15406                                                 
+l15414                                                 
+l2247                                                  
+l2250                                                  
+l2253                                                  
+l2256                                                  
+l3335                                                  
+l3338                                                  
+l3344                                                  
+l4432                                                  
+l5523                                                  
+l5526                                                  
+l6616                                                  
+l6619                                                  
+l6625                                                  
+l6628                                                  
+l8842                                                  
+l8845                                                  
+l8854                                                  
+l8857                                                  
+l8868                                                  
+l8918                                                  
+l8921                                                  
+reset_vec                              reset_vec    000
+saved_w                                (abs)        07E
+start                                  init         011
+start_initialization                   cinit        75D
+wtemp0                                 (abs)        07E
