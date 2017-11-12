@@ -1,0 +1,1118 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
+  -h+ms83fxx02_motorctrl.sym -z -Q16F685 -ol.obj -Mms83fxx02_motorctrl.map \
+  -E1 -ACONST=00h-0FFhx16 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
+  -AENTRY=00h-0FFhx16 -ASTRING=00h-0FFhx16 -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh -ACOMMON=070h-07Fh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-011Fh -ASFR3=0180h-01EFh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  startup.obj ms83fxx02_motorctrl.obj 
+
+Object code version is 3.10
+
+Machine type is 16F685
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                             11       11        2        8       0
+                reset_vec                             0        0        2        0       0
+ms83fxx02_motorctrl.obj
+                intentry                              4        4        D        8       0
+                text1855                            B55      B55       16     16AA       0
+                text1854                            B6B      B6B       17     16D6       0
+                text1853                            A59      A59       10     14B2       0
+                text1852                            B82      B82       17     1704       0
+                text1851                            D57      D57       25     1AAE       0
+                text1850                            F8E      F8E       37     1F1C       0
+                text1849                            4EC      4EC       66        8       0
+                text1848                            E71      E71       2D     1CE2       0
+                text1847                            E46      E46       2B     1C8C       0
+                text1846                            5AD      5AD       59        8       0
+                text1845                            9C0      9C0        6     1380       0
+                text1844                            A99      A99       11     1532       0
+                text1843                            EFB      EFB       30     1DF6       0
+                text1842                            9B6      9B6        5     136C       0
+                text1841                            BE6      BE6       1C     17CC       0
+                text1840                            70D      70D       3E        8       0
+                text1839                            ABB      ABB       12     1576       0
+                text1838                            B2B      B2B       15     1656       0
+                text1837                            E9E      E9E       2E     1D3C       0
+                text1836                            64C      64C       41        8       0
+                text1835                            A11      A11        E     1422       0
+                text1834                            D33      D33       24     1A66       0
+                text1833                            B03      B03       14     1606       0
+                text1832                            F2B      F2B       31     1E56       0
+                text1831                            39E      39E       71        8       0
+                text1830                            F5C      F5C       32     1EB8       0
+                text1829                            C02      C02       1D     1804       0
+                text1828                            C1F      C1F       1D     183E       0
+                text1827                            74B      74B       3D        8       0
+                text1826                            ACD      ACD       12     159A       0
+                text1825                            9E5      9E5        A     13CA       0
+                text1824                            D7C      D7C       27     1AF8       0
+                text1823                            9B3      9B3        3     1366       0
+                text1822                            9CD      9CD        8     139A       0
+                text1821                            A1F      A1F        E     143E       0
+                text1820                            CB2      CB2       1F     1964       0
+                text1819                            ADF      ADF       12     15BE       0
+                text1818                            9D5      9D5        8     13AA       0
+                text1817                            9BB      9BB        5     1376       0
+                text1816                            606      606       46        8       0
+                text1815                            DCA      DCA       29     1B94       0
+                text1814                            6CD      6CD       40        8       0
+                text1813                            CD1      CD1       1F     19A2       0
+                text1812                            A3B      A3B        F     1476       0
+                text1811                            A04      A04        D     1408       0
+                text1810                            A2D      A2D        E     145A       0
+                text1809                            552      552       5B        8       0
+                text1808                            C76      C76       1E     18EC       0
+                text1807                            AF1      AF1       12     15E2       0
+                text1806                            AAA      AAA       11     1554       0
+                text1805                            FC5      FC5       3B     1F8A       0
+                text1804                            A4A      A4A        F     1494       0
+                text1803                            221      221       83        8       0
+                text1802                            D10      D10       23     1A20       0
+                text1801                            321      321       7D        8       0
+                text1800                            47E      47E       6E        8       0
+                text1799                            40F      40F       6F        8       0
+                text1798                            CF0      CF0       20     19E0       0
+                text1797                            B40      B40       15     1680       0
+                text1796                            A69      A69       10     14D2       0
+                text1795                            B99      B99       19     1732       0
+                text1794                            E1C      E1C       2A     1C38       0
+                text1793                            B17      B17       14     162E       0
+                text1792                            A79      A79       10     14F2       0
+                text1791                            C3C      C3C       1D     1878       0
+                text1790                            7C4      7C4       3C        8       0
+                text1789                            DA3      DA3       27     1B46       0
+                text1788                            C59      C59       1D     18B2       0
+                text1787                            ECC      ECC       2F     1D98       0
+                text1786                            A89      A89       10     1512       0
+                text1785                            DF3      DF3       29     1BE6       0
+                text1784                            9EF      9EF        A     13DE       0
+                text1783                            9F9      9F9        B     13F2       0
+                text1782                            BB2      BB2       19     1764       0
+                text1781                            9C6      9C6        7     138C       0
+                text1780                            12A      12A       F7        8       0
+                text1779                            68D      68D       40        8       0
+                text1778                            C94      C94       1E     1928       0
+                text1777                            788      788       3C        8       0
+                text1776                             13       13      117        8       0
+                maintext                            2A4      2A4       7D        8       0
+                cstackBANK0                          47       47       22       20       1
+                cstackCOMMON                         70       70        B       70       1
+                clrtext                             9DD      9DD        8     13BA       0
+                dataBANK0                            69       69        2       20       1
+                bssBANK0                             20       20       27       20       1
+                dataCOMMON                           7B       7B        2       70       1
+                bssCOMMON                            7D       7D        1       70       1
+                cinit                               BCB      BCB       1B     1796       0
+                idataCOMMON                         9B1      9B1        2     1362       0
+                idataBANK0                            2        2        2        0       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                             11       11        2         0
+                intentry                              4        4        D         0
+                reset_vec                             0        0        2         0
+                text1855                            B55      B55       16         0
+                text1854                            B6B      B6B       17         0
+                text1853                            A59      A59       10         0
+                text1852                            B82      B82       17         0
+                text1851                            D57      D57       25         0
+                text1850                            F8E      F8E       37         0
+                text1849                            4EC      4EC       66         0
+                text1848                            E71      E71       2D         0
+                text1847                            E46      E46       2B         0
+                text1846                            5AD      5AD       59         0
+                text1845                            9C0      9C0        6         0
+                text1844                            A99      A99       11         0
+                text1843                            EFB      EFB       30         0
+                text1842                            9B6      9B6        5         0
+                text1841                            BE6      BE6       1C         0
+                text1840                            70D      70D       3E         0
+                text1839                            ABB      ABB       12         0
+                text1838                            B2B      B2B       15         0
+                text1837                            E9E      E9E       2E         0
+                text1836                            64C      64C       41         0
+                text1835                            A11      A11        E         0
+                text1834                            D33      D33       24         0
+                text1833                            B03      B03       14         0
+                text1832                            F2B      F2B       31         0
+                text1831                            39E      39E       71         0
+                text1830                            F5C      F5C       32         0
+                text1829                            C02      C02       1D         0
+                text1828                            C1F      C1F       1D         0
+                text1827                            74B      74B       3D         0
+                text1826                            ACD      ACD       12         0
+                text1825                            9E5      9E5        A         0
+                text1824                            D7C      D7C       27         0
+                text1823                            9B3      9B3        3         0
+                text1822                            9CD      9CD        8         0
+                text1821                            A1F      A1F        E         0
+                text1820                            CB2      CB2       1F         0
+                text1819                            ADF      ADF       12         0
+                text1818                            9D5      9D5        8         0
+                text1817                            9BB      9BB        5         0
+                text1816                            606      606       46         0
+                text1815                            DCA      DCA       29         0
+                text1814                            6CD      6CD       40         0
+                text1813                            CD1      CD1       1F         0
+                text1812                            A3B      A3B        F         0
+                text1811                            A04      A04        D         0
+                text1810                            A2D      A2D        E         0
+                text1809                            552      552       5B         0
+                text1808                            C76      C76       1E         0
+                text1807                            AF1      AF1       12         0
+                text1806                            AAA      AAA       11         0
+                text1805                            FC5      FC5       3B         0
+                text1804                            A4A      A4A        F         0
+                text1803                            221      221       83         0
+                text1802                            D10      D10       23         0
+                text1801                            321      321       7D         0
+                text1800                            47E      47E       6E         0
+                text1799                            40F      40F       6F         0
+                text1798                            CF0      CF0       20         0
+                text1797                            B40      B40       15         0
+                text1796                            A69      A69       10         0
+                text1795                            B99      B99       19         0
+                text1794                            E1C      E1C       2A         0
+                text1793                            B17      B17       14         0
+                text1792                            A79      A79       10         0
+                text1791                            C3C      C3C       1D         0
+                text1790                            7C4      7C4       3C         0
+                text1789                            DA3      DA3       27         0
+                text1788                            C59      C59       1D         0
+                text1787                            ECC      ECC       2F         0
+                text1786                            A89      A89       10         0
+                text1785                            DF3      DF3       29         0
+                text1784                            9EF      9EF        A         0
+                text1783                            9F9      9F9        B         0
+                text1782                            BB2      BB2       19         0
+                text1781                            9C6      9C6        7         0
+                text1780                            12A      12A       F7         0
+                text1779                            68D      68D       40         0
+                text1778                            C94      C94       1E         0
+                text1777                            788      788       3C         0
+                text1776                             13       13      117         0
+                maintext                            2A4      2A4       7D         0
+                clrtext                             9DD      9DD        8         0
+                cinit                               BCB      BCB       1B         0
+                idataCOMMON                         9B1      9B1        2         0
+                idataBANK0                            2        2        2         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   BANK0          
+                cstackBANK0                          47       47       22         1
+                dataBANK0                            69       69        2         1
+                bssBANK0                             20       20       27         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        B         1
+                dataCOMMON                           7B       7B        2         1
+                bssCOMMON                            7D       7D        1         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   BANK3          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000004  000004         0       0  CODE        2
+                intentry                       000004  0007FC  000800         8       0  CODE        2
+                bssBANK0                       000020  00004B  00006B        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                idataCOMMON                    0009B1  000002  0009B3      1362       0  CODE        2
+                text1823                       0009B3  000003  0009B6      1366       0  CODE        2
+                text1842                       0009B6  000005  0009BB      136C       0  CODE        2
+                text1817                       0009BB  000005  0009C0      1376       0  CODE        2
+                text1845                       0009C0  000006  0009C6      1380       0  CODE        2
+                text1781                       0009C6  000007  0009CD      138C       0  CODE        2
+                text1822                       0009CD  000008  0009D5      139A       0  CODE        2
+                text1818                       0009D5  000008  0009DD      13AA       0  CODE        2
+                clrtext                        0009DD  000008  0009E5      13BA       0  CODE        2
+                text1825                       0009E5  00000A  0009EF      13CA       0  CODE        2
+                text1784                       0009EF  00000A  0009F9      13DE       0  CODE        2
+                text1783                       0009F9  00000B  000A04      13F2       0  CODE        2
+                text1811                       000A04  00000D  000A11      1408       0  CODE        2
+                text1835                       000A11  00000E  000A1F      1422       0  CODE        2
+                text1821                       000A1F  00000E  000A2D      143E       0  CODE        2
+                text1810                       000A2D  00000E  000A3B      145A       0  CODE        2
+                text1812                       000A3B  00000F  000A4A      1476       0  CODE        2
+                text1804                       000A4A  00000F  000A59      1494       0  CODE        2
+                text1853                       000A59  000010  000A69      14B2       0  CODE        2
+                text1796                       000A69  000010  000A79      14D2       0  CODE        2
+                text1792                       000A79  000010  000A89      14F2       0  CODE        2
+                text1786                       000A89  000010  000A99      1512       0  CODE        2
+                text1844                       000A99  000011  000AAA      1532       0  CODE        2
+                text1806                       000AAA  000011  000ABB      1554       0  CODE        2
+                text1839                       000ABB  000012  000ACD      1576       0  CODE        2
+                text1826                       000ACD  000012  000ADF      159A       0  CODE        2
+                text1819                       000ADF  000012  000AF1      15BE       0  CODE        2
+                text1807                       000AF1  000012  000B03      15E2       0  CODE        2
+                text1833                       000B03  000014  000B17      1606       0  CODE        2
+                text1793                       000B17  000014  000B2B      162E       0  CODE        2
+                text1838                       000B2B  000015  000B40      1656       0  CODE        2
+                text1797                       000B40  000015  000B55      1680       0  CODE        2
+                text1855                       000B55  000016  000B6B      16AA       0  CODE        2
+                text1854                       000B6B  000017  000B82      16D6       0  CODE        2
+                text1852                       000B82  000017  000B99      1704       0  CODE        2
+                text1795                       000B99  000019  000BB2      1732       0  CODE        2
+                text1782                       000BB2  000019  000BCB      1764       0  CODE        2
+                cinit                          000BCB  00001B  000BE6      1796       0  CODE        2
+                text1841                       000BE6  00001C  000C02      17CC       0  CODE        2
+                text1829                       000C02  00001D  000C1F      1804       0  CODE        2
+                text1828                       000C1F  00001D  000C3C      183E       0  CODE        2
+                text1791                       000C3C  00001D  000C59      1878       0  CODE        2
+                text1788                       000C59  00001D  000C76      18B2       0  CODE        2
+                text1808                       000C76  00001E  000C94      18EC       0  CODE        2
+                text1778                       000C94  00001E  000CB2      1928       0  CODE        2
+                text1820                       000CB2  00001F  000CD1      1964       0  CODE        2
+                text1813                       000CD1  00001F  000CF0      19A2       0  CODE        2
+                text1798                       000CF0  000020  000D10      19E0       0  CODE        2
+                text1802                       000D10  000023  000D33      1A20       0  CODE        2
+                text1834                       000D33  000024  000D57      1A66       0  CODE        2
+                text1851                       000D57  000025  000D7C      1AAE       0  CODE        2
+                text1824                       000D7C  000027  000DA3      1AF8       0  CODE        2
+                text1789                       000DA3  000027  000DCA      1B46       0  CODE        2
+                text1815                       000DCA  000029  000DF3      1B94       0  CODE        2
+                text1785                       000DF3  000029  000E1C      1BE6       0  CODE        2
+                text1794                       000E1C  00002A  000E46      1C38       0  CODE        2
+                text1847                       000E46  00002B  000E71      1C8C       0  CODE        2
+                text1848                       000E71  00002D  000E9E      1CE2       0  CODE        2
+                text1837                       000E9E  00002E  000ECC      1D3C       0  CODE        2
+                text1787                       000ECC  00002F  000EFB      1D98       0  CODE        2
+                text1843                       000EFB  000030  000F2B      1DF6       0  CODE        2
+                text1832                       000F2B  000031  000F5C      1E56       0  CODE        2
+                text1830                       000F5C  000032  000F8E      1EB8       0  CODE        2
+                text1850                       000F8E  000037  000FC5      1F1C       0  CODE        2
+                text1805                       000FC5  00003B  001000      1F8A       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            006B-006F              5           1
+        BANK1            00A0-00EF             50           1
+        BANK2            0120-016F             50           1
+        CODE             0800-09B0            1B1           2
+        CONFIG           2007-2007              1           2
+        CONST            0800-09B0            100           2
+        EEDATA           2100-21FF            100           2
+        ENTRY            0800-09B0            100           2
+        IDLOC            2000-2003              4           2
+        RAM              006B-006F              5           1
+                         00A0-00EF             50
+                         0120-016F             50
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-011F             20           1
+        SFR3             0180-01EF             70           1
+        STRCODE          0800-09B0            1B1           2
+        STRING           0800-09B0            100           2
+
+                                  Symbol Table
+
+??_ADC_Enable                          cstackCOMMON 0070
+??_ADC_Init                            cstackBANK0  004B
+??_ADC_IntrHandler                     cstackCOMMON 0078
+??_ADC_ReadData                        cstackCOMMON 0072
+??_Battery_Detect                      cstackBANK0  0063
+??_Battery_HandleData                  cstackBANK0  004D
+??_Board_Init                          cstackBANK0  004B
+??_ChargeCtrl_Init                     cstackBANK0  004F
+??_ChargeCtrl_Output                   cstackBANK0  004F
+??_ChargeDetect_GetStatus              cstackBANK0  004E
+??_ChargeDetect_Init                   cstackBANK0  004F
+??_ChargeDetect_IntrHandler            cstackCOMMON 0073
+??_ChargeTimer_Cmd                     cstackBANK0  004B
+??_ChargeTimer_GetCount                cstackBANK0  004D
+??_ChargeTimer_INTConfig               cstackBANK0  004B
+??_ChargeTimer_IntrHandler             cstackCOMMON 0070
+??_Charge_Init                         cstackBANK0  0052
+??_DebounceTimer_IntrHandler           cstackCOMMON 0073
+??_Driver_Init                         cstackBANK0  0052
+??_EEPROM_Init                         cstackBANK0  004D
+??_EEPROM_SetFlag                      cstackBANK0  004D
+??_EEPROM_StoreModeData                cstackBANK0  004D
+??_EEPROM_StoreMotorData               cstackBANK0  004D
+??_EEPROM_Write                        cstackBANK0  004C
+??_GPIO_INTConfig                      cstackBANK0  004D
+??_GPIO_Init                           cstackBANK0  004C
+??_GPIO_ReadInputDataBit               cstackBANK0  004C
+??_GPIO_WriteBit                       cstackBANK0  004D
+??_GetDeviceMode                       cstackBANK0  004B
+??_ISR                                 cstackBANK0  0047
+??_KEY_DeInit                          cstackBANK0  004E
+??_KEY_GetPressStatus                  cstackBANK0  004B
+??_KEY_GetReleaseStatus                cstackBANK0  004B
+??_KEY_Init                            cstackBANK0  004F
+??_KEY_IntrHandler                     cstackCOMMON 0070
+??_LEDTimer_Cmd                        cstackBANK0  004C
+??_LEDTimer_DispRunLimitCmd            cstackBANK0  004B
+??_LEDTimer_DispUnderVoltCmd           cstackBANK0  004B
+??_LEDTimer_INTConfig                  cstackBANK0  004B
+??_LEDTimer_IntrHandler                cstackCOMMON 007A
+??_LED_DisplayMotorStatus              cstackBANK0  0050
+??_LED_DisplayRunLimit                 cstackCOMMON 0077
+??_LED_Init                            cstackBANK0  004F
+??_LED_UnderVoltageOutput              cstackBANK0  004F
+??_LED_VoltageChargeOutput             cstackBANK0  004F
+??_MotorOperTimer_IntrHandler          cstackCOMMON 0078
+??_MotorOperationTimer_Init            cstackBANK0  004B
+??_MotorOperationTimer_Stop            cstackBANK0  004B
+??_Motor_CheckRunLimit                 cstackBANK0  004B
+??_Motor_GetStatus                     cstackBANK0  004B
+??_Motor_HandleStatusChangeEvt         cstackBANK0  0054
+??_Motor_Init                          cstackBANK0  004B
+??_Motor_SetStatus                     cstackBANK0  004B
+??_Motor_Start                         cstackBANK0  0052
+??_Motor_Stop                          cstackBANK0  004F
+??_SetDeviceMode                       cstackBANK0  004B
+??_SleepLedTimer_Init                  cstackBANK0  004D
+??_SleepLedTimer_IntrHandler           cstackCOMMON 0070
+??_SleepLed_ChangeDuty                 cstackCOMMON 0070
+??_SleepLed_Init                       cstackBANK0  004D
+??_SwitchModeTimer_Cmd                 cstackBANK0  004B
+??_SwitchModeTimer_GetINTStatus        cstackBANK0  004B
+??_SwitchModeTimer_INTConfig           cstackBANK0  004B
+??_SwitchModeTimer_IntrHandler         cstackCOMMON 0070
+??_TIM1_Init                           cstackCOMMON 0070
+??___awmod                             cstackCOMMON 0074
+??___ftge                              cstackBANK0  0059
+??___ftpack                            cstackBANK0  0050
+??___lwtoft                            cstackBANK0  0062
+??_charge_control                      cstackBANK0  0067
+??_main                                cstackBANK0  0069
+??i1_GPIO_ReadInputDataBit             cstackCOMMON 0071
+??i1_GPIO_WriteBit                     cstackCOMMON 0075
+??i1_GetDeviceMode                     cstackCOMMON 0070
+??i1_LED_UnderVoltageOutput            cstackCOMMON 0077
+??i1_MotorOperationTimer_Init          cstackCOMMON 0070
+??i1_MotorOperationTimer_Stop          cstackCOMMON 0070
+??i1_Motor_CheckRunLimit               cstackCOMMON 0070
+??i1_Motor_Init                        cstackCOMMON 0070
+??i1_Motor_SetStatus                   cstackCOMMON 0070
+??i1_Motor_Stop                        cstackCOMMON 0077
+?_ADC_Enable                           cstackCOMMON 0070
+?_ADC_Init                             cstackCOMMON 0070
+?_ADC_IntrHandler                      cstackCOMMON 0070
+?_ADC_ReadData                         cstackCOMMON 0070
+?_Battery_Detect                       cstackCOMMON 0070
+?_Battery_HandleData                   cstackBANK0  004B
+?_Board_Init                           cstackCOMMON 0070
+?_ChargeCtrl_Init                      cstackCOMMON 0070
+?_ChargeCtrl_Output                    cstackCOMMON 0070
+?_ChargeDetect_GetStatus               cstackCOMMON 0070
+?_ChargeDetect_Init                    cstackCOMMON 0070
+?_ChargeDetect_IntrHandler             cstackCOMMON 0070
+?_ChargeTimer_Cmd                      cstackCOMMON 0070
+?_ChargeTimer_GetCount                 cstackBANK0  004B
+?_ChargeTimer_INTConfig                cstackCOMMON 0070
+?_ChargeTimer_IntrHandler              cstackCOMMON 0070
+?_Charge_Init                          cstackCOMMON 0070
+?_DebounceTimer_IntrHandler            cstackCOMMON 0070
+?_Driver_Init                          cstackCOMMON 0070
+?_EEPROM_Init                          cstackCOMMON 0070
+?_EEPROM_SetFlag                       cstackCOMMON 0070
+?_EEPROM_StoreModeData                 cstackCOMMON 0070
+?_EEPROM_StoreMotorData                cstackCOMMON 0070
+?_EEPROM_Write                         cstackBANK0  004B
+?_GPIO_INTConfig                       cstackBANK0  004B
+?_GPIO_Init                            cstackBANK0  004B
+?_GPIO_ReadInputDataBit                cstackBANK0  004B
+?_GPIO_WriteBit                        cstackBANK0  004B
+?_GetDeviceMode                        cstackCOMMON 0070
+?_ISR                                  cstackCOMMON 0070
+?_KEY_DeInit                           cstackCOMMON 0070
+?_KEY_GetPressStatus                   cstackCOMMON 0070
+?_KEY_GetReleaseStatus                 cstackCOMMON 0070
+?_KEY_Init                             cstackCOMMON 0070
+?_KEY_IntrHandler                      cstackCOMMON 0070
+?_LEDTimer_Cmd                         cstackBANK0  004B
+?_LEDTimer_DispRunLimitCmd             cstackCOMMON 0070
+?_LEDTimer_DispUnderVoltCmd            cstackCOMMON 0070
+?_LEDTimer_INTConfig                   cstackCOMMON 0070
+?_LEDTimer_IntrHandler                 cstackCOMMON 0070
+?_LED_DisplayMotorStatus               cstackBANK0  004F
+?_LED_DisplayRunLimit                  cstackCOMMON 0070
+?_LED_Init                             cstackCOMMON 0070
+?_LED_UnderVoltageOutput               cstackCOMMON 0070
+?_LED_VoltageChargeOutput              cstackCOMMON 0070
+?_MotorOperTimer_IntrHandler           cstackCOMMON 0070
+?_MotorOperationTimer_Init             cstackCOMMON 0070
+?_MotorOperationTimer_Stop             cstackCOMMON 0070
+?_Motor_CheckRunLimit                  cstackCOMMON 0070
+?_Motor_GetStatus                      cstackCOMMON 0070
+?_Motor_HandleStatusChangeEvt          cstackCOMMON 0070
+?_Motor_Init                           cstackCOMMON 0070
+?_Motor_SetStatus                      cstackCOMMON 0070
+?_Motor_Start                          cstackCOMMON 0070
+?_Motor_Stop                           cstackCOMMON 0070
+?_SetDeviceMode                        cstackCOMMON 0070
+?_SleepLedTimer_Init                   cstackCOMMON 0070
+?_SleepLedTimer_IntrHandler            cstackCOMMON 0070
+?_SleepLed_ChangeDuty                  cstackCOMMON 0070
+?_SleepLed_Init                        cstackBANK0  004B
+?_SwitchModeTimer_Cmd                  cstackCOMMON 0070
+?_SwitchModeTimer_GetINTStatus         cstackCOMMON 0070
+?_SwitchModeTimer_INTConfig            cstackCOMMON 0070
+?_SwitchModeTimer_IntrHandler          cstackCOMMON 0070
+?_TIM1_Init                            cstackCOMMON 0070
+?___awmod                              cstackCOMMON 0070
+?___ftge                               cstackBANK0  0053
+?___ftpack                             cstackBANK0  004B
+?___lwtoft                             cstackBANK0  005F
+?_charge_control                       cstackCOMMON 0070
+?_main                                 cstackCOMMON 0070
+?i1_GPIO_ReadInputDataBit              cstackCOMMON 0070
+?i1_GPIO_WriteBit                      cstackCOMMON 0073
+?i1_GetDeviceMode                      cstackCOMMON 0070
+?i1_LED_UnderVoltageOutput             cstackCOMMON 0070
+?i1_MotorOperationTimer_Init           cstackCOMMON 0070
+?i1_MotorOperationTimer_Stop           cstackCOMMON 0070
+?i1_Motor_CheckRunLimit                cstackCOMMON 0070
+?i1_Motor_Init                         cstackCOMMON 0070
+?i1_Motor_SetStatus                    cstackCOMMON 0070
+?i1_Motor_Stop                         cstackCOMMON 0070
+ADC_Enable@channel                     cstackCOMMON 0072
+ADC_Init@channel                       cstackBANK0  004D
+ADC_ReadData@battery_value             cstackCOMMON 0076
+Battery_Detect@adc_data                cstackBANK0  0065
+Battery_Detect@mode                    cstackBANK0  0064
+Battery_HandleData@average_data        cstackBANK0  0053
+Battery_HandleData@i                   cstackBANK0  0057
+Battery_HandleData@temp1               cstackBANK0  0055
+Battery_HandleData@temp2               cstackBANK0  0051
+ChargeCtrl_Init@GPIO_InitStruct        cstackBANK0  0050
+ChargeCtrl_Output@BitVal               cstackBANK0  0051
+ChargeDetect_GetStatus@i               cstackBANK0  004F
+ChargeDetect_Init@GPIO_InitStruct      cstackBANK0  0050
+ChargeTimer_Cmd@NewState               cstackBANK0  004B
+ChargeTimer_INTConfig@NewState         cstackBANK0  004B
+EEPROM_Write@addr                      cstackBANK0  004C
+EEPROM_Write@data                      cstackBANK0  004B
+GPIO_INTConfig@GPIO_Pin                cstackBANK0  004B
+GPIO_INTConfig@GPIOx                   cstackBANK0  004E
+GPIO_INTConfig@NewState                cstackBANK0  004C
+GPIO_Init@GPIO_InitStruct              cstackBANK0  004B
+GPIO_Init@GPIOx                        cstackBANK0  004D
+GPIO_ReadInputDataBit@GPIO_Pin         cstackBANK0  004B
+GPIO_ReadInputDataBit@GPIOx            cstackBANK0  004D
+GPIO_ReadInputDataBit@bitstatus        cstackBANK0  004C
+GPIO_WriteBit@BitVal                   cstackBANK0  004C
+GPIO_WriteBit@GPIO_Pin                 cstackBANK0  004B
+GPIO_WriteBit@GPIOx                    cstackBANK0  004E
+KEY_DeInit@GPIO_InitStruct             cstackBANK0  004F
+KEY_Init@GPIO_InitStruct               cstackBANK0  0050
+LEDTimer_Cmd@NewState                  cstackBANK0  004B
+LEDTimer_Cmd@period_type               cstackBANK0  004D
+LEDTimer_DispRunLimitCmd@NewState      cstackBANK0  004B
+LEDTimer_DispUnderVoltCmd@NewState     cstackBANK0  004B
+LEDTimer_INTConfig@NewState            cstackBANK0  004B
+LED_DisplayMotorStatus@GPIO_Pin        cstackBANK0  004F
+LED_DisplayMotorStatus@GPIOx           cstackBANK0  0051
+LED_Init@GPIO_InitStruct               cstackBANK0  0050
+LED_UnderVoltageOutput@BitVal          cstackBANK0  0051
+LED_VoltageChargeOutput@BitVal         cstackBANK0  0051
+MotorOperationTimer_Init@time          cstackBANK0  004B
+Motor_HandleStatusChangeEvt@status     cstackBANK0  0055
+Motor_Init@status                      cstackBANK0  004C
+Motor_SetStatus@status                 cstackBANK0  004C
+Motor_Start@status                     cstackBANK0  0053
+SetDeviceMode@mode                     cstackBANK0  004C
+SleepLed_Init@duty                     cstackBANK0  004B
+SwitchModeTimer_Cmd@NewState           cstackBANK0  004B
+SwitchModeTimer_INTConfig@NewState     cstackBANK0  004B
+_ADCON0                                (abs)        001F
+_ADCON1                                (abs)        009F
+_ADC_Enable                            text1852     0B82
+_ADC_Init                              text1828     0C1F
+_ADC_IntrHandler                       text1837     0E9E
+_ADC_ReadData                          text1851     0D57
+_ADIE                                  (abs)        0469
+_ADIF                                  (abs)        0069
+_ADON                                  (abs)        00F8
+_ADRESH                                (abs)        001E
+_ADRESL                                (abs)        009E
+_ANSEL                                 (abs)        0091
+_ANSEL5                                (abs)        048D
+_Battery_Detect                        text1780     012A
+_Battery_HandleData                    text1803     0221
+_Board_Init                            text1829     0C02
+_CARRY                                 (abs)        0018
+_CCP1CON                               (abs)        0015
+_CCPR1L                                (abs)        0013
+_CMCON0                                (abs)        0019
+_ChargeCtrl_Init                       text1788     0C59
+_ChargeCtrl_Output                     text1792     0A79
+_ChargeDetect_GetStatus                text1790     07C4
+_ChargeDetect_Init                     text1789     0DA3
+_ChargeDetect_IntrHandler              text1838     0B2B
+_ChargeTimer_Cmd                       text1820     0CB2
+_ChargeTimer_GetCount                  text1825     09E5
+_ChargeTimer_INTConfig                 text1819     0ADF
+_ChargeTimer_IntrHandler               text1854     0B6B
+_Charge_Init                           text1781     09C6
+_DebounceTimer_IntrHandler             text1840     070D
+_Driver_Init                           text1778     0C94
+_EEADR                                 (abs)        009B
+_EECON1                                (abs)        009C
+_EECON2                                (abs)        009D
+_EEDAT                                 (abs)        009A
+_EEDATA                                (abs)        009A
+_EEPROM_Init                           text1797     0B40
+_EEPROM_SetFlag                        text1784     09EF
+_EEPROM_StoreModeData                  text1783     09F9
+_EEPROM_StoreMotorData                 text1785     0DF3
+_EEPROM_Write                          text1813     0CD1
+_GIE                                   (abs)        005F
+_GO_DONE                               (abs)        00F9
+_GPIO_INTConfig                        text1814     06CD
+_GPIO_Init                             text1816     0606
+_GPIO_ReadInputDataBit                 text1815     0DCA
+_GPIO_WriteBit                         text1824     0D7C
+_GetDeviceMode                         text1817     09BB
+_INTCON                                (abs)        000B
+_INTE                                  (abs)        005C
+_INTEDG                                (abs)        040E
+_INTF                                  (abs)        0059
+_IOCA                                  (abs)        0096
+_ISR                                   text1830     0F5C
+_KEY_DeInit                            text1795     0B99
+_KEY_GetPressStatus                    text1811     0A04
+_KEY_GetReleaseStatus                  text1812     0A3B
+_KEY_Init                              text1798     0CF0
+_KEY_IntrHandler                       text1841     0BE6
+_LEDTimer_Cmd                          text1827     074B
+_LEDTimer_DispRunLimitCmd              text1821     0A1F
+_LEDTimer_DispUnderVoltCmd             text1810     0A2D
+_LEDTimer_INTConfig                    text1826     0ACD
+_LEDTimer_IntrHandler                  text1832     0F2B
+_LED_DisplayMotorStatus                text1787     0ECC
+_LED_DisplayRunLimit                   text1836     064C
+_LED_Init                              text1799     040F
+_LED_UnderVoltageOutput                text1786     0A89
+_LED_VoltageChargeOutput               text1796     0A69
+_MSCKCON                               (abs)        001B
+_MotorOperTimer_IntrHandler            text1831     039E
+_MotorOperationTimer_Init              text1805     0FC5
+_MotorOperationTimer_Stop              text1793     0B17
+_Motor_CheckRunLimit                   text1806     0AAA
+_Motor_GetStatus                       text1823     09B3
+_Motor_HandleStatusChangeEvt           text1776     0013
+_Motor_Init                            text1809     0552
+_Motor_SetStatus                       text1822     09CD
+_Motor_Start                           text1779     068D
+_Motor_Stop                            text1794     0E1C
+_OSCCON                                (abs)        008F
+_PAIE                                  (abs)        005B
+_PAIF                                  (abs)        0058
+_PCON                                  (abs)        008E
+_PEIE                                  (abs)        005E
+_PIE1                                  (abs)        008C
+_PIE2                                  (abs)        008D
+_PIR1                                  (abs)        000C
+_PIR2                                  (abs)        000D
+_PORTA                                 (abs)        0005
+_PORTC                                 (abs)        0007
+_PR2                                   (abs)        0092
+_PR3L                                  (abs)        010E
+_PR4L                                  (abs)        0114
+_PR5L                                  (abs)        011A
+_PWM1CON                               (abs)        0016
+_PWM3CR0                               (abs)        010F
+_PWM3CR1                               (abs)        0110
+_PWM4CR0                               (abs)        0115
+_PWM4CR1                               (abs)        0116
+_PWM5CR0                               (abs)        011B
+_PWM5CR1                               (abs)        011C
+_RD                                    (abs)        04E0
+_SetDeviceMode                         text1818     09D5
+_SleepLedTimer_Init                    text1791     0C3C
+_SleepLedTimer_IntrHandler             text1839     0ABB
+_SleepLed_ChangeDuty                   text1850     0F8E
+_SleepLed_Init                         text1802     0D10
+_SwitchModeTimer_Cmd                   text1808     0C76
+_SwitchModeTimer_GetINTStatus          text1804     0A4A
+_SwitchModeTimer_INTConfig             text1807     0AF1
+_SwitchModeTimer_IntrHandler           text1855     0B55
+_T1CON                                 (abs)        0010
+_T2CKSRC                               (abs)        00DD
+_T2CON                                 (abs)        0012
+_T3CKDIV                               (abs)        0111
+_T4CKDIV                               (abs)        0117
+_T5CKDIV                               (abs)        011D
+_TIM1_Init                             text1853     0A59
+_TMR1H                                 (abs)        000F
+_TMR1IE                                (abs)        0460
+_TMR1IF                                (abs)        0060
+_TMR1L                                 (abs)        000E
+_TMR1ON                                (abs)        0080
+_TMR2                                  (abs)        0011
+_TMR2IF                                (abs)        0061
+_TMR2ON                                (abs)        0092
+_TMR3H                                 (abs)        010D
+_TMR3IE                                (abs)        0881
+_TMR3IF                                (abs)        0880
+_TMR3L                                 (abs)        010C
+_TMR3ON                                (abs)        0882
+_TMR4H                                 (abs)        0113
+_TMR4IE                                (abs)        08B1
+_TMR4IF                                (abs)        08B0
+_TMR4L                                 (abs)        0112
+_TMR4ON                                (abs)        08B2
+_TMR5H                                 (abs)        0119
+_TMR5IE                                (abs)        08E1
+_TMR5IF                                (abs)        08E0
+_TMR5L                                 (abs)        0118
+_TMR5ON                                (abs)        08E2
+_TRISA                                 (abs)        0085
+_TRISC                                 (abs)        0087
+_TRISC3                                (abs)        043B
+_WDTCON                                (abs)        0018
+_WPD                                   (abs)        0089
+_WPUA                                  (abs)        0095
+_WR                                    (abs)        04E8
+_WREN                                  (abs)        0C62
+_WREN1                                 (abs)        04E2
+_WREN2                                 (abs)        04E4
+_WREN3                                 (abs)        04E5
+__Habs1                                abs1         0000
+__Hbank0                               bank0        0000
+__Hbank1                               bank1        0000
+__Hbank2                               bank2        0000
+__Hbank3                               bank3        0000
+__HbssBANK0                            bssBANK0     0000
+__HbssCOMMON                           bssCOMMON    0000
+__Hcinit                               cinit        0000
+__Hclrtext                             clrtext      0000
+__Hcode                                code         0000
+__Hcommon                              common       0000
+__Hconfig                              config       0000
+__HcstackBANK0                         cstackBANK0  0000
+__HcstackCOMMON                        cstackCOMMON 0000
+__HdataBANK0                           dataBANK0    0000
+__HdataCOMMON                          dataCOMMON   0000
+__Heeprom_data                         eeprom_data  0000
+__Hend_init                            end_init     0013
+__Hfunctab                             functab      0000
+__HidataBANK0                          idataBANK0   0000
+__HidataCOMMON                         idataCOMMON  0000
+__Hidloc                               idloc        0000
+__Hinit                                init         0011
+__Hintentry                            intentry     0011
+__Hmaintext                            maintext     0000
+__Hpowerup                             powerup      0000
+__Hram                                 ram          0000
+__Hreset_vec                           reset_vec    0002
+__Hsfr0                                sfr0         0000
+__Hsfr1                                sfr1         0000
+__Hsfr2                                sfr2         0000
+__Hsfr3                                sfr3         0000
+__Hstrings                             strings      0000
+__Htext                                text         0000
+__Labs1                                abs1         0000
+__Lbank0                               bank0        0000
+__Lbank1                               bank1        0000
+__Lbank2                               bank2        0000
+__Lbank3                               bank3        0000
+__LbssBANK0                            bssBANK0     0000
+__LbssCOMMON                           bssCOMMON    0000
+__Lcinit                               cinit        0000
+__Lclrtext                             clrtext      0000
+__Lcode                                code         0000
+__Lcommon                              common       0000
+__Lconfig                              config       0000
+__LcstackBANK0                         cstackBANK0  0000
+__LcstackCOMMON                        cstackCOMMON 0000
+__LdataBANK0                           dataBANK0    0000
+__LdataCOMMON                          dataCOMMON   0000
+__Leeprom_data                         eeprom_data  0000
+__Lend_init                            end_init     0011
+__Lfunctab                             functab      0000
+__LidataBANK0                          idataBANK0   0000
+__LidataCOMMON                         idataCOMMON  0000
+__Lidloc                               idloc        0000
+__Linit                                init         0011
+__Lintentry                            intentry     0004
+__Lmaintext                            maintext     0000
+__Lpowerup                             powerup      0000
+__Lram                                 ram          0000
+__Lreset_vec                           reset_vec    0000
+__Lsfr0                                sfr0         0000
+__Lsfr1                                sfr1         0000
+__Lsfr2                                sfr2         0000
+__Lsfr3                                sfr3         0000
+__Lstrings                             strings      0000
+__Ltext                                text         0000
+__S0                                   (abs)        1000
+__S1                                   (abs)        007E
+__S2                                   (abs)        0000
+___awmod                               text1849     04EC
+___awmod@counter                       cstackCOMMON 0075
+___awmod@dividend                      cstackCOMMON 0072
+___awmod@divisor                       cstackCOMMON 0070
+___awmod@sign                          cstackCOMMON 0076
+___ftge                                text1800     047E
+___ftge@ff1                            cstackBANK0  0053
+___ftge@ff2                            cstackBANK0  0056
+___ftpack                              text1801     0321
+___ftpack@arg                          cstackBANK0  004B
+___ftpack@exp                          cstackBANK0  004E
+___ftpack@sign                         cstackBANK0  004F
+___lwtoft                              text1782     0BB2
+___lwtoft@c                            cstackBANK0  005F
+__end_of_ADC_Enable                    text1852     0B99
+__end_of_ADC_Init                      text1828     0C3C
+__end_of_ADC_IntrHandler               text1837     0ECC
+__end_of_ADC_ReadData                  text1851     0D7C
+__end_of_Battery_Detect                text1780     0221
+__end_of_Battery_HandleData            text1803     02A4
+__end_of_Board_Init                    text1829     0C1F
+__end_of_ChargeCtrl_Init               text1788     0C76
+__end_of_ChargeCtrl_Output             text1792     0A89
+__end_of_ChargeDetect_GetStatus        text1790     0800
+__end_of_ChargeDetect_Init             text1789     0DCA
+__end_of_ChargeDetect_IntrHandler      text1838     0B40
+__end_of_ChargeTimer_Cmd               text1820     0CD1
+__end_of_ChargeTimer_GetCount          text1825     09EF
+__end_of_ChargeTimer_INTConfig         text1819     0AF1
+__end_of_ChargeTimer_IntrHandler       text1854     0B82
+__end_of_Charge_Init                   text1781     09CD
+__end_of_DebounceTimer_IntrHandler     text1840     074B
+__end_of_Driver_Init                   text1778     0CB2
+__end_of_EEPROM_Init                   text1797     0B55
+__end_of_EEPROM_SetFlag                text1784     09F9
+__end_of_EEPROM_StoreModeData          text1783     0A04
+__end_of_EEPROM_StoreMotorData         text1785     0E1C
+__end_of_EEPROM_Write                  text1813     0CF0
+__end_of_GPIO_INTConfig                text1814     070D
+__end_of_GPIO_Init                     text1816     064C
+__end_of_GPIO_ReadInputDataBit         text1815     0DF3
+__end_of_GPIO_WriteBit                 text1824     0DA3
+__end_of_GetDeviceMode                 text1817     09C0
+__end_of_ISR                           text1830     0F8E
+__end_of_KEY_DeInit                    text1795     0BB2
+__end_of_KEY_GetPressStatus            text1811     0A11
+__end_of_KEY_GetReleaseStatus          text1812     0A4A
+__end_of_KEY_Init                      text1798     0D10
+__end_of_KEY_IntrHandler               text1841     0C02
+__end_of_LEDTimer_Cmd                  text1827     0788
+__end_of_LEDTimer_DispRunLimitCmd      text1821     0A2D
+__end_of_LEDTimer_DispUnderVoltCmd     text1810     0A3B
+__end_of_LEDTimer_INTConfig            text1826     0ADF
+__end_of_LEDTimer_IntrHandler          text1832     0F5C
+__end_of_LED_DisplayMotorStatus        text1787     0EFB
+__end_of_LED_DisplayRunLimit           text1836     068D
+__end_of_LED_Init                      text1799     047E
+__end_of_LED_UnderVoltageOutput        text1786     0A99
+__end_of_LED_VoltageChargeOutput       text1796     0A79
+__end_of_MotorOperTimer_IntrHandler    text1831     040F
+__end_of_MotorOperationTimer_Init      text1805     1000
+__end_of_MotorOperationTimer_Stop      text1793     0B2B
+__end_of_Motor_CheckRunLimit           text1806     0ABB
+__end_of_Motor_GetStatus               text1823     09B6
+__end_of_Motor_HandleStatusChangeEvt   text1776     012A
+__end_of_Motor_Init                    text1809     05AD
+__end_of_Motor_SetStatus               text1822     09D5
+__end_of_Motor_Start                   text1779     06CD
+__end_of_Motor_Stop                    text1794     0E46
+__end_of_SetDeviceMode                 text1818     09DD
+__end_of_SleepLedTimer_Init            text1791     0C59
+__end_of_SleepLedTimer_IntrHandler     text1839     0ACD
+__end_of_SleepLed_ChangeDuty           text1850     0FC5
+__end_of_SleepLed_Init                 text1802     0D33
+__end_of_SwitchModeTimer_Cmd           text1808     0C94
+__end_of_SwitchModeTimer_GetINTStatus  text1804     0A59
+__end_of_SwitchModeTimer_INTConfig     text1807     0B03
+__end_of_SwitchModeTimer_IntrHandler   text1855     0B6B
+__end_of_TIM1_Init                     text1853     0A69
+__end_of___awmod                       text1849     0552
+__end_of___ftge                        text1800     04EC
+__end_of___ftpack                      text1801     039E
+__end_of___lwtoft                      text1782     0BCB
+__end_of_charge_control                text1777     07C4
+__end_of_main                          maintext     0321
+__end_ofi1_GPIO_ReadInputDataBit       text1847     0E71
+__end_ofi1_GPIO_WriteBit               text1848     0E9E
+__end_ofi1_GetDeviceMode               text1842     09BB
+__end_ofi1_LED_UnderVoltageOutput      text1835     0A1F
+__end_ofi1_MotorOperationTimer_Init    text1843     0F2B
+__end_ofi1_MotorOperationTimer_Stop    text1833     0B17
+__end_ofi1_Motor_CheckRunLimit         text1844     0AAA
+__end_ofi1_Motor_Init                  text1846     0606
+__end_ofi1_Motor_SetStatus             text1845     09C6
+__end_ofi1_Motor_Stop                  text1834     0D57
+__pbssBANK0                            bssBANK0     0020
+__pbssCOMMON                           bssCOMMON    007D
+__pcstackBANK0                         cstackBANK0  0047
+__pcstackCOMMON                        cstackCOMMON 0070
+__pdataBANK0                           dataBANK0    0069
+__pdataCOMMON                          dataCOMMON   007B
+__pidataBANK0                          idataBANK0   0002
+__pidataCOMMON                         idataCOMMON  09B1
+__pintentry                            intentry     0004
+__pmaintext                            maintext     02A4
+__ptext1776                            text1776     0013
+__ptext1777                            text1777     0788
+__ptext1778                            text1778     0C94
+__ptext1779                            text1779     068D
+__ptext1780                            text1780     012A
+__ptext1781                            text1781     09C6
+__ptext1782                            text1782     0BB2
+__ptext1783                            text1783     09F9
+__ptext1784                            text1784     09EF
+__ptext1785                            text1785     0DF3
+__ptext1786                            text1786     0A89
+__ptext1787                            text1787     0ECC
+__ptext1788                            text1788     0C59
+__ptext1789                            text1789     0DA3
+__ptext1790                            text1790     07C4
+__ptext1791                            text1791     0C3C
+__ptext1792                            text1792     0A79
+__ptext1793                            text1793     0B17
+__ptext1794                            text1794     0E1C
+__ptext1795                            text1795     0B99
+__ptext1796                            text1796     0A69
+__ptext1797                            text1797     0B40
+__ptext1798                            text1798     0CF0
+__ptext1799                            text1799     040F
+__ptext1800                            text1800     047E
+__ptext1801                            text1801     0321
+__ptext1802                            text1802     0D10
+__ptext1803                            text1803     0221
+__ptext1804                            text1804     0A4A
+__ptext1805                            text1805     0FC5
+__ptext1806                            text1806     0AAA
+__ptext1807                            text1807     0AF1
+__ptext1808                            text1808     0C76
+__ptext1809                            text1809     0552
+__ptext1810                            text1810     0A2D
+__ptext1811                            text1811     0A04
+__ptext1812                            text1812     0A3B
+__ptext1813                            text1813     0CD1
+__ptext1814                            text1814     06CD
+__ptext1815                            text1815     0DCA
+__ptext1816                            text1816     0606
+__ptext1817                            text1817     09BB
+__ptext1818                            text1818     09D5
+__ptext1819                            text1819     0ADF
+__ptext1820                            text1820     0CB2
+__ptext1821                            text1821     0A1F
+__ptext1822                            text1822     09CD
+__ptext1823                            text1823     09B3
+__ptext1824                            text1824     0D7C
+__ptext1825                            text1825     09E5
+__ptext1826                            text1826     0ACD
+__ptext1827                            text1827     074B
+__ptext1828                            text1828     0C1F
+__ptext1829                            text1829     0C02
+__ptext1830                            text1830     0F5C
+__ptext1831                            text1831     039E
+__ptext1832                            text1832     0F2B
+__ptext1833                            text1833     0B03
+__ptext1834                            text1834     0D33
+__ptext1835                            text1835     0A11
+__ptext1836                            text1836     064C
+__ptext1837                            text1837     0E9E
+__ptext1838                            text1838     0B2B
+__ptext1839                            text1839     0ABB
+__ptext1840                            text1840     070D
+__ptext1841                            text1841     0BE6
+__ptext1842                            text1842     09B6
+__ptext1843                            text1843     0EFB
+__ptext1844                            text1844     0A99
+__ptext1845                            text1845     09C0
+__ptext1846                            text1846     05AD
+__ptext1847                            text1847     0E46
+__ptext1848                            text1848     0E71
+__ptext1849                            text1849     04EC
+__ptext1850                            text1850     0F8E
+__ptext1851                            text1851     0D57
+__ptext1852                            text1852     0B82
+__ptext1853                            text1853     0A59
+__ptext1854                            text1854     0B6B
+__ptext1855                            text1855     0B55
+__ptext1856                            text1856     0000
+__size_of_ADC_Enable                   (abs)        0000
+__size_of_ADC_Init                     (abs)        0000
+__size_of_ADC_IntrHandler              (abs)        0000
+__size_of_ADC_ReadData                 (abs)        0000
+__size_of_Battery_Detect               (abs)        0000
+__size_of_Battery_HandleData           (abs)        0000
+__size_of_Board_Init                   (abs)        0000
+__size_of_ChargeCtrl_Init              (abs)        0000
+__size_of_ChargeCtrl_Output            (abs)        0000
+__size_of_ChargeDetect_GetStatus       (abs)        0000
+__size_of_ChargeDetect_Init            (abs)        0000
+__size_of_ChargeDetect_IntrHandler     (abs)        0000
+__size_of_ChargeTimer_Cmd              (abs)        0000
+__size_of_ChargeTimer_GetCount         (abs)        0000
+__size_of_ChargeTimer_INTConfig        (abs)        0000
+__size_of_ChargeTimer_IntrHandler      (abs)        0000
+__size_of_Charge_Init                  (abs)        0000
+__size_of_DebounceTimer_IntrHandler    (abs)        0000
+__size_of_Driver_Init                  (abs)        0000
+__size_of_EEPROM_Init                  (abs)        0000
+__size_of_EEPROM_SetFlag               (abs)        0000
+__size_of_EEPROM_StoreModeData         (abs)        0000
+__size_of_EEPROM_StoreMotorData        (abs)        0000
+__size_of_EEPROM_Write                 (abs)        0000
+__size_of_GPIO_INTConfig               (abs)        0000
+__size_of_GPIO_Init                    (abs)        0000
+__size_of_GPIO_ReadInputDataBit        (abs)        0000
+__size_of_GPIO_WriteBit                (abs)        0000
+__size_of_GetDeviceMode                (abs)        0000
+__size_of_ISR                          (abs)        0000
+__size_of_KEY_DeInit                   (abs)        0000
+__size_of_KEY_GetPressStatus           (abs)        0000
+__size_of_KEY_GetReleaseStatus         (abs)        0000
+__size_of_KEY_Init                     (abs)        0000
+__size_of_KEY_IntrHandler              (abs)        0000
+__size_of_LEDTimer_Cmd                 (abs)        0000
+__size_of_LEDTimer_DispRunLimitCmd     (abs)        0000
+__size_of_LEDTimer_DispUnderVoltCmd    (abs)        0000
+__size_of_LEDTimer_INTConfig           (abs)        0000
+__size_of_LEDTimer_IntrHandler         (abs)        0000
+__size_of_LED_DisplayMotorStatus       (abs)        0000
+__size_of_LED_DisplayRunLimit          (abs)        0000
+__size_of_LED_Init                     (abs)        0000
+__size_of_LED_UnderVoltageOutput       (abs)        0000
+__size_of_LED_VoltageChargeOutput      (abs)        0000
+__size_of_MotorOperTimer_IntrHandler   (abs)        0000
+__size_of_MotorOperationTimer_Init     (abs)        0000
+__size_of_MotorOperationTimer_Stop     (abs)        0000
+__size_of_Motor_CheckRunLimit          (abs)        0000
+__size_of_Motor_GetStatus              (abs)        0000
+__size_of_Motor_HandleStatusChangeEvt  (abs)        0000
+__size_of_Motor_Init                   (abs)        0000
+__size_of_Motor_SetStatus              (abs)        0000
+__size_of_Motor_Start                  (abs)        0000
+__size_of_Motor_Stop                   (abs)        0000
+__size_of_SetDeviceMode                (abs)        0000
+__size_of_SleepLedTimer_Init           (abs)        0000
+__size_of_SleepLedTimer_IntrHandler    (abs)        0000
+__size_of_SleepLed_ChangeDuty          (abs)        0000
+__size_of_SleepLed_Init                (abs)        0000
+__size_of_SwitchModeTimer_Cmd          (abs)        0000
+__size_of_SwitchModeTimer_GetINTStatus (abs)        0000
+__size_of_SwitchModeTimer_INTConfig    (abs)        0000
+__size_of_SwitchModeTimer_IntrHandler  (abs)        0000
+__size_of_TIM1_Init                    (abs)        0000
+__size_of___awmod                      (abs)        0000
+__size_of___ftge                       (abs)        0000
+__size_of___ftpack                     (abs)        0000
+__size_of___lwtoft                     (abs)        0000
+__size_of_charge_control               (abs)        0000
+__size_of_main                         (abs)        0000
+__size_ofi1_GPIO_ReadInputDataBit      (abs)        0000
+__size_ofi1_GPIO_WriteBit              (abs)        0000
+__size_ofi1_GetDeviceMode              (abs)        0000
+__size_ofi1_LED_UnderVoltageOutput     (abs)        0000
+__size_ofi1_MotorOperationTimer_Init   (abs)        0000
+__size_ofi1_MotorOperationTimer_Stop   (abs)        0000
+__size_ofi1_Motor_CheckRunLimit        (abs)        0000
+__size_ofi1_Motor_Init                 (abs)        0000
+__size_ofi1_Motor_SetStatus            (abs)        0000
+__size_ofi1_Motor_Stop                 (abs)        0000
+_battery_handle_flag                   bssBANK0     003A
+_battery_sample_count                  bssBANK0     003B
+_battery_value                         bssBANK0     0020
+_charge_control                        text1777     0788
+_charge_detect_count                   bssBANK0     003C
+_charge_time_out                       bssBANK0     0034
+_current_period_type                   dataBANK0    0069
+_detect_under_voltage                  bssBANK0     003D
+_device_mode                           bssBANK0     003E
+_exit                                  init         0011
+_key_press                             bssBANK0     003F
+_key_press_flag                        bssBANK0     0040
+_key_press_time_count                  bssBANK0     0041
+_key_release                           bssBANK0     0042
+_key_status                            dataCOMMON   007B
+_main                                  maintext     02A4
+_motor_intr_count                      bssCOMMON    007D
+_motor_oper_record                     bssBANK0     0036
+_motor_status                          dataCOMMON   007C
+_motor_timing_running_flag             dataBANK0    006A
+_run_limit_display_en                  bssBANK0     0043
+_sleep_led_dir                         bssBANK0     0044
+_sleep_led_duty                        bssBANK0     0038
+_switch_mode_time_out                  bssBANK0     0045
+_under_volt_display_En                 bssBANK0     0046
+btemp                                  (abs)        007E
+charge_control@charge_count            cstackBANK0  0067
+clear_ram                              clrtext      09DD
+end_of_initialization                  cinit        0BE3
+i1GPIO_ReadInputDataBit@GPIO_Pin       cstackCOMMON 0070
+i1GPIO_ReadInputDataBit@GPIOx          cstackCOMMON 0072
+i1GPIO_ReadInputDataBit@bitstatus      cstackCOMMON 0071
+i1GPIO_WriteBit@BitVal                 cstackCOMMON 0074
+i1GPIO_WriteBit@GPIO_Pin               cstackCOMMON 0073
+i1GPIO_WriteBit@GPIOx                  cstackCOMMON 0076
+i1LED_UnderVoltageOutput@BitVal        cstackCOMMON 0079
+i1MotorOperationTimer_Init@time        cstackCOMMON 0070
+i1Motor_Init@status                    cstackCOMMON 0071
+i1Motor_SetStatus@status               cstackCOMMON 0071
+i1_GPIO_ReadInputDataBit               text1847     0E46
+i1_GPIO_WriteBit                       text1848     0E71
+i1_GetDeviceMode                       text1842     09B6
+i1_LED_UnderVoltageOutput              text1835     0A11
+i1_MotorOperationTimer_Init            text1843     0EFB
+i1_MotorOperationTimer_Stop            text1833     0B03
+i1_Motor_CheckRunLimit                 text1844     0A99
+i1_Motor_Init                          text1846     05AD
+i1_Motor_SetStatus                     text1845     09C0
+i1_Motor_Stop                          text1834     0D33
+interrupt_function                     intentry     0004
+intlevel0                              functab      0000
+intlevel1                              functab      0000
+intlevel2                              functab      0000
+intlevel3                              functab      0000
+intlevel4                              functab      0000
+intlevel5                              functab      0000
+reset_vec                              reset_vec    0000
+saved_w                                (abs)        007E
+start                                  init         0011
+start_initialization                   cinit        0BCB
+wtemp0                                 (abs)        007E
